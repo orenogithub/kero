@@ -1,0 +1,2208 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix faldo: <http://biohackathon.org/resource/faldo#> .
+@prefix kero: <http://kero.hgc.jp/ontology/kero.owl#> .
+@prefix chr: <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/> .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> a kero:MethylSeqFile;
+   rdfs:label "BS-seq of LC2ad" .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:11210";
+     faldo:location chr:1:11210-11210:1;
+     kero:bin 1;
+     kero:caNum 2;
+     kero:cgNum 3
+   ] .
+
+chr:1:11210-11210:1 a faldo:Region;
+   rdfs:label "chromosome 1:11210-11210:1";
+   faldo:begin chr:1:11210:1;
+   faldo:end chr:1:11210:1;
+   faldo:reference chr:1 .
+
+chr:1:11210:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:11210:1";
+   faldo:position 11210;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:11226";
+     faldo:location chr:1:11226-11226:1;
+     kero:bin 1;
+     kero:caNum 2;
+     kero:cgNum 3
+   ] .
+
+chr:1:11226-11226:1 a faldo:Region;
+   rdfs:label "chromosome 1:11226-11226:1";
+   faldo:begin chr:1:11226:1;
+   faldo:end chr:1:11226:1;
+   faldo:reference chr:1 .
+
+chr:1:11226:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:11226:1";
+   faldo:position 11226;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:11239";
+     faldo:location chr:1:11239-11239:1;
+     kero:bin 1;
+     kero:caNum 6;
+     kero:cgNum 1
+   ] .
+
+chr:1:11239-11239:1 a faldo:Region;
+   rdfs:label "chromosome 1:11239-11239:1";
+   faldo:begin chr:1:11239:1;
+   faldo:end chr:1:11239:1;
+   faldo:reference chr:1 .
+
+chr:1:11239:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:11239:1";
+   faldo:position 11239;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:11284";
+     faldo:location chr:1:11284-11284:1;
+     kero:bin 1;
+     kero:caNum 7;
+     kero:cgNum 2
+   ] .
+
+chr:1:11284-11284:1 a faldo:Region;
+   rdfs:label "chromosome 1:11284-11284:1";
+   faldo:begin chr:1:11284:1;
+   faldo:end chr:1:11284:1;
+   faldo:reference chr:1 .
+
+chr:1:11284:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:11284:1";
+   faldo:position 11284;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:11297";
+     faldo:location chr:1:11297-11297:1;
+     kero:bin 2;
+     kero:caNum 8;
+     kero:cgNum 4
+   ] .
+
+chr:1:11297-11297:1 a faldo:Region;
+   rdfs:label "chromosome 1:11297-11297:1";
+   faldo:begin chr:1:11297:1;
+   faldo:end chr:1:11297:1;
+   faldo:reference chr:1 .
+
+chr:1:11297:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:11297:1";
+   faldo:position 11297;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:11300";
+     faldo:location chr:1:11300-11300:1;
+     kero:bin 4;
+     kero:caNum 9;
+     kero:cgNum 5
+   ] .
+
+chr:1:11300-11300:1 a faldo:Region;
+   rdfs:label "chromosome 1:11300-11300:1";
+   faldo:begin chr:1:11300:1;
+   faldo:end chr:1:11300:1;
+   faldo:reference chr:1 .
+
+chr:1:11300:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:11300:1";
+   faldo:position 11300;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:11343";
+     faldo:location chr:1:11343-11343:1;
+     kero:bin 1;
+     kero:caNum 5;
+     kero:cgNum 5
+   ] .
+
+chr:1:11343-11343:1 a faldo:Region;
+   rdfs:label "chromosome 1:11343-11343:1";
+   faldo:begin chr:1:11343:1;
+   faldo:end chr:1:11343:1;
+   faldo:reference chr:1 .
+
+chr:1:11343:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:11343:1";
+   faldo:position 11343;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:11346";
+     faldo:location chr:1:11346-11346:1;
+     kero:bin 1;
+     kero:caNum 5;
+     kero:cgNum 5
+   ] .
+
+chr:1:11346-11346:1 a faldo:Region;
+   rdfs:label "chromosome 1:11346-11346:1";
+   faldo:begin chr:1:11346:1;
+   faldo:end chr:1:11346:1;
+   faldo:reference chr:1 .
+
+chr:1:11346:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:11346:1";
+   faldo:position 11346;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:16869";
+     faldo:location chr:1:16869-16869:1;
+     kero:bin 3;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:16869-16869:1 a faldo:Region;
+   rdfs:label "chromosome 1:16869-16869:1";
+   faldo:begin chr:1:16869:1;
+   faldo:end chr:1:16869:1;
+   faldo:reference chr:1 .
+
+chr:1:16869:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:16869:1";
+   faldo:position 16869;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:68056";
+     faldo:location chr:1:68056-68056:1;
+     kero:bin 2;
+     kero:caNum 7;
+     kero:cgNum 14
+   ] .
+
+chr:1:68056-68056:1 a faldo:Region;
+   rdfs:label "chromosome 1:68056-68056:1";
+   faldo:begin chr:1:68056:1;
+   faldo:end chr:1:68056:1;
+   faldo:reference chr:1 .
+
+chr:1:68056:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:68056:1";
+   faldo:position 68056;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:68122";
+     faldo:location chr:1:68122-68122:1;
+     kero:bin 2;
+     kero:caNum 0;
+     kero:cgNum 31
+   ] .
+
+chr:1:68122-68122:1 a faldo:Region;
+   rdfs:label "chromosome 1:68122-68122:1";
+   faldo:begin chr:1:68122:1;
+   faldo:end chr:1:68122:1;
+   faldo:reference chr:1 .
+
+chr:1:68122:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:68122:1";
+   faldo:position 68122;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:68239";
+     faldo:location chr:1:68239-68239:1;
+     kero:bin 1;
+     kero:caNum 48;
+     kero:cgNum 85
+   ] .
+
+chr:1:68239-68239:1 a faldo:Region;
+   rdfs:label "chromosome 1:68239-68239:1";
+   faldo:begin chr:1:68239:1;
+   faldo:end chr:1:68239:1;
+   faldo:reference chr:1 .
+
+chr:1:68239:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:68239:1";
+   faldo:position 68239;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:68246";
+     faldo:location chr:1:68246-68246:1;
+     kero:bin 5;
+     kero:caNum 38;
+     kero:cgNum 100
+   ] .
+
+chr:1:68246-68246:1 a faldo:Region;
+   rdfs:label "chromosome 1:68246-68246:1";
+   faldo:begin chr:1:68246:1;
+   faldo:end chr:1:68246:1;
+   faldo:reference chr:1 .
+
+chr:1:68246:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:68246:1";
+   faldo:position 68246;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:128886";
+     faldo:location chr:1:128886-128886:1;
+     kero:bin 2;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:128886-128886:1 a faldo:Region;
+   rdfs:label "chromosome 1:128886-128886:1";
+   faldo:begin chr:1:128886:1;
+   faldo:end chr:1:128886:1;
+   faldo:reference chr:1 .
+
+chr:1:128886:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:128886:1";
+   faldo:position 128886;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:128904";
+     faldo:location chr:1:128904-128904:1;
+     kero:bin 5;
+     kero:caNum 0;
+     kero:cgNum 7
+   ] .
+
+chr:1:128904-128904:1 a faldo:Region;
+   rdfs:label "chromosome 1:128904-128904:1";
+   faldo:begin chr:1:128904:1;
+   faldo:end chr:1:128904:1;
+   faldo:reference chr:1 .
+
+chr:1:128904:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:128904:1";
+   faldo:position 128904;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:129054";
+     faldo:location chr:1:129054-129054:1;
+     kero:bin 3;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:129054-129054:1 a faldo:Region;
+   rdfs:label "chromosome 1:129054-129054:1";
+   faldo:begin chr:1:129054:1;
+   faldo:end chr:1:129054:1;
+   faldo:reference chr:1 .
+
+chr:1:129054:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:129054:1";
+   faldo:position 129054;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:258921";
+     faldo:location chr:1:258921-258921:1;
+     kero:bin 1;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:258921-258921:1 a faldo:Region;
+   rdfs:label "chromosome 1:258921-258921:1";
+   faldo:begin chr:1:258921:1;
+   faldo:end chr:1:258921:1;
+   faldo:reference chr:1 .
+
+chr:1:258921:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:258921:1";
+   faldo:position 258921;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:258931";
+     faldo:location chr:1:258931-258931:1;
+     kero:bin 1;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:258931-258931:1 a faldo:Region;
+   rdfs:label "chromosome 1:258931-258931:1";
+   faldo:begin chr:1:258931:1;
+   faldo:end chr:1:258931:1;
+   faldo:reference chr:1 .
+
+chr:1:258931:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:258931:1";
+   faldo:position 258931;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:258972";
+     faldo:location chr:1:258972-258972:1;
+     kero:bin 5;
+     kero:caNum 10;
+     kero:cgNum 0
+   ] .
+
+chr:1:258972-258972:1 a faldo:Region;
+   rdfs:label "chromosome 1:258972-258972:1";
+   faldo:begin chr:1:258972:1;
+   faldo:end chr:1:258972:1;
+   faldo:reference chr:1 .
+
+chr:1:258972:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:258972:1";
+   faldo:position 258972;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:258983";
+     faldo:location chr:1:258983-258983:1;
+     kero:bin 1;
+     kero:caNum 0;
+     kero:cgNum 10
+   ] .
+
+chr:1:258983-258983:1 a faldo:Region;
+   rdfs:label "chromosome 1:258983-258983:1";
+   faldo:begin chr:1:258983:1;
+   faldo:end chr:1:258983:1;
+   faldo:reference chr:1 .
+
+chr:1:258983:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:258983:1";
+   faldo:position 258983;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:259011";
+     faldo:location chr:1:259011-259011:1;
+     kero:bin 3;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:259011-259011:1 a faldo:Region;
+   rdfs:label "chromosome 1:259011-259011:1";
+   faldo:begin chr:1:259011:1;
+   faldo:end chr:1:259011:1;
+   faldo:reference chr:1 .
+
+chr:1:259011:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:259011:1";
+   faldo:position 259011;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:259017";
+     faldo:location chr:1:259017-259017:1;
+     kero:bin 1;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:259017-259017:1 a faldo:Region;
+   rdfs:label "chromosome 1:259017-259017:1";
+   faldo:begin chr:1:259017:1;
+   faldo:end chr:1:259017:1;
+   faldo:reference chr:1 .
+
+chr:1:259017:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:259017:1";
+   faldo:position 259017;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:259023";
+     faldo:location chr:1:259023-259023:1;
+     kero:bin 1;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:259023-259023:1 a faldo:Region;
+   rdfs:label "chromosome 1:259023-259023:1";
+   faldo:begin chr:1:259023:1;
+   faldo:end chr:1:259023:1;
+   faldo:reference chr:1 .
+
+chr:1:259023:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:259023:1";
+   faldo:position 259023;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:280460";
+     faldo:location chr:1:280460-280460:1;
+     kero:bin 4;
+     kero:caNum 0;
+     kero:cgNum 5
+   ] .
+
+chr:1:280460-280460:1 a faldo:Region;
+   rdfs:label "chromosome 1:280460-280460:1";
+   faldo:begin chr:1:280460:1;
+   faldo:end chr:1:280460:1;
+   faldo:reference chr:1 .
+
+chr:1:280460:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:280460:1";
+   faldo:position 280460;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:280470";
+     faldo:location chr:1:280470-280470:1;
+     kero:bin 1;
+     kero:caNum 0;
+     kero:cgNum 5
+   ] .
+
+chr:1:280470-280470:1 a faldo:Region;
+   rdfs:label "chromosome 1:280470-280470:1";
+   faldo:begin chr:1:280470:1;
+   faldo:end chr:1:280470:1;
+   faldo:reference chr:1 .
+
+chr:1:280470:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:280470:1";
+   faldo:position 280470;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:365633";
+     faldo:location chr:1:365633-365633:1;
+     kero:bin 5;
+     kero:caNum 6;
+     kero:cgNum 2
+   ] .
+
+chr:1:365633-365633:1 a faldo:Region;
+   rdfs:label "chromosome 1:365633-365633:1";
+   faldo:begin chr:1:365633:1;
+   faldo:end chr:1:365633:1;
+   faldo:reference chr:1 .
+
+chr:1:365633:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:365633:1";
+   faldo:position 365633;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:365844";
+     faldo:location chr:1:365844-365844:1;
+     kero:bin 2;
+     kero:caNum 2;
+     kero:cgNum 3
+   ] .
+
+chr:1:365844-365844:1 a faldo:Region;
+   rdfs:label "chromosome 1:365844-365844:1";
+   faldo:begin chr:1:365844:1;
+   faldo:end chr:1:365844:1;
+   faldo:reference chr:1 .
+
+chr:1:365844:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:365844:1";
+   faldo:position 365844;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:494733";
+     faldo:location chr:1:494733-494733:1;
+     kero:bin 5;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:494733-494733:1 a faldo:Region;
+   rdfs:label "chromosome 1:494733-494733:1";
+   faldo:begin chr:1:494733:1;
+   faldo:end chr:1:494733:1;
+   faldo:reference chr:1 .
+
+chr:1:494733:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:494733:1";
+   faldo:position 494733;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:495429";
+     faldo:location chr:1:495429-495429:1;
+     kero:bin 3;
+     kero:caNum 4;
+     kero:cgNum 1
+   ] .
+
+chr:1:495429-495429:1 a faldo:Region;
+   rdfs:label "chromosome 1:495429-495429:1";
+   faldo:begin chr:1:495429:1;
+   faldo:end chr:1:495429:1;
+   faldo:reference chr:1 .
+
+chr:1:495429:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:495429:1";
+   faldo:position 495429;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:607035";
+     faldo:location chr:1:607035-607035:1;
+     kero:bin 4;
+     kero:caNum 0;
+     kero:cgNum 5
+   ] .
+
+chr:1:607035-607035:1 a faldo:Region;
+   rdfs:label "chromosome 1:607035-607035:1";
+   faldo:begin chr:1:607035:1;
+   faldo:end chr:1:607035:1;
+   faldo:reference chr:1 .
+
+chr:1:607035:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:607035:1";
+   faldo:position 607035;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:616188";
+     faldo:location chr:1:616188-616188:1;
+     kero:bin 2;
+     kero:caNum 5;
+     kero:cgNum 3
+   ] .
+
+chr:1:616188-616188:1 a faldo:Region;
+   rdfs:label "chromosome 1:616188-616188:1";
+   faldo:begin chr:1:616188:1;
+   faldo:end chr:1:616188:1;
+   faldo:reference chr:1 .
+
+chr:1:616188:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:616188:1";
+   faldo:position 616188;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:616271";
+     faldo:location chr:1:616271-616271:1;
+     kero:bin 4;
+     kero:caNum 3;
+     kero:cgNum 11
+   ] .
+
+chr:1:616271-616271:1 a faldo:Region;
+   rdfs:label "chromosome 1:616271-616271:1";
+   faldo:begin chr:1:616271:1;
+   faldo:end chr:1:616271:1;
+   faldo:reference chr:1 .
+
+chr:1:616271:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:616271:1";
+   faldo:position 616271;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:616289";
+     faldo:location chr:1:616289-616289:1;
+     kero:bin 1;
+     kero:caNum 11;
+     kero:cgNum 3
+   ] .
+
+chr:1:616289-616289:1 a faldo:Region;
+   rdfs:label "chromosome 1:616289-616289:1";
+   faldo:begin chr:1:616289:1;
+   faldo:end chr:1:616289:1;
+   faldo:reference chr:1 .
+
+chr:1:616289:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:616289:1";
+   faldo:position 616289;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:616308";
+     faldo:location chr:1:616308-616308:1;
+     kero:bin 2;
+     kero:caNum 2;
+     kero:cgNum 9
+   ] .
+
+chr:1:616308-616308:1 a faldo:Region;
+   rdfs:label "chromosome 1:616308-616308:1";
+   faldo:begin chr:1:616308:1;
+   faldo:end chr:1:616308:1;
+   faldo:reference chr:1 .
+
+chr:1:616308:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:616308:1";
+   faldo:position 616308;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:616357";
+     faldo:location chr:1:616357-616357:1;
+     kero:bin 1;
+     kero:caNum 2;
+     kero:cgNum 4
+   ] .
+
+chr:1:616357-616357:1 a faldo:Region;
+   rdfs:label "chromosome 1:616357-616357:1";
+   faldo:begin chr:1:616357:1;
+   faldo:end chr:1:616357:1;
+   faldo:reference chr:1 .
+
+chr:1:616357:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:616357:1";
+   faldo:position 616357;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629091";
+     faldo:location chr:1:629091-629091:1;
+     kero:bin 2;
+     kero:caNum 19;
+     kero:cgNum 5
+   ] .
+
+chr:1:629091-629091:1 a faldo:Region;
+   rdfs:label "chromosome 1:629091-629091:1";
+   faldo:begin chr:1:629091:1;
+   faldo:end chr:1:629091:1;
+   faldo:reference chr:1 .
+
+chr:1:629091:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629091:1";
+   faldo:position 629091;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629115";
+     faldo:location chr:1:629115-629115:1;
+     kero:bin 1;
+     kero:caNum 88;
+     kero:cgNum 9
+   ] .
+
+chr:1:629115-629115:1 a faldo:Region;
+   rdfs:label "chromosome 1:629115-629115:1";
+   faldo:begin chr:1:629115:1;
+   faldo:end chr:1:629115:1;
+   faldo:reference chr:1 .
+
+chr:1:629115:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629115:1";
+   faldo:position 629115;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629121";
+     faldo:location chr:1:629121-629121:1;
+     kero:bin 1;
+     kero:caNum 111;
+     kero:cgNum 6
+   ] .
+
+chr:1:629121-629121:1 a faldo:Region;
+   rdfs:label "chromosome 1:629121-629121:1";
+   faldo:begin chr:1:629121:1;
+   faldo:end chr:1:629121:1;
+   faldo:reference chr:1 .
+
+chr:1:629121:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629121:1";
+   faldo:position 629121;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629124";
+     faldo:location chr:1:629124-629124:1;
+     kero:bin 1;
+     kero:caNum 117;
+     kero:cgNum 6
+   ] .
+
+chr:1:629124-629124:1 a faldo:Region;
+   rdfs:label "chromosome 1:629124-629124:1";
+   faldo:begin chr:1:629124:1;
+   faldo:end chr:1:629124:1;
+   faldo:reference chr:1 .
+
+chr:1:629124:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629124:1";
+   faldo:position 629124;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629136";
+     faldo:location chr:1:629136-629136:1;
+     kero:bin 1;
+     kero:caNum 139;
+     kero:cgNum 6
+   ] .
+
+chr:1:629136-629136:1 a faldo:Region;
+   rdfs:label "chromosome 1:629136-629136:1";
+   faldo:begin chr:1:629136:1;
+   faldo:end chr:1:629136:1;
+   faldo:reference chr:1 .
+
+chr:1:629136:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629136:1";
+   faldo:position 629136;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629154";
+     faldo:location chr:1:629154-629154:1;
+     kero:bin 2;
+     kero:caNum 218;
+     kero:cgNum 8
+   ] .
+
+chr:1:629154-629154:1 a faldo:Region;
+   rdfs:label "chromosome 1:629154-629154:1";
+   faldo:begin chr:1:629154:1;
+   faldo:end chr:1:629154:1;
+   faldo:reference chr:1 .
+
+chr:1:629154:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629154:1";
+   faldo:position 629154;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629220";
+     faldo:location chr:1:629220-629220:1;
+     kero:bin 1;
+     kero:caNum 541;
+     kero:cgNum 11
+   ] .
+
+chr:1:629220-629220:1 a faldo:Region;
+   rdfs:label "chromosome 1:629220-629220:1";
+   faldo:begin chr:1:629220:1;
+   faldo:end chr:1:629220:1;
+   faldo:reference chr:1 .
+
+chr:1:629220:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629220:1";
+   faldo:position 629220;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629296";
+     faldo:location chr:1:629296-629296:1;
+     kero:bin 4;
+     kero:caNum 576;
+     kero:cgNum 18
+   ] .
+
+chr:1:629296-629296:1 a faldo:Region;
+   rdfs:label "chromosome 1:629296-629296:1";
+   faldo:begin chr:1:629296:1;
+   faldo:end chr:1:629296:1;
+   faldo:reference chr:1 .
+
+chr:1:629296:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629296:1";
+   faldo:position 629296;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629311";
+     faldo:location chr:1:629311-629311:1;
+     kero:bin 1;
+     kero:caNum 547;
+     kero:cgNum 19
+   ] .
+
+chr:1:629311-629311:1 a faldo:Region;
+   rdfs:label "chromosome 1:629311-629311:1";
+   faldo:begin chr:1:629311:1;
+   faldo:end chr:1:629311:1;
+   faldo:reference chr:1 .
+
+chr:1:629311:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629311:1";
+   faldo:position 629311;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629317";
+     faldo:location chr:1:629317-629317:1;
+     kero:bin 2;
+     kero:caNum 549;
+     kero:cgNum 21
+   ] .
+
+chr:1:629317-629317:1 a faldo:Region;
+   rdfs:label "chromosome 1:629317-629317:1";
+   faldo:begin chr:1:629317:1;
+   faldo:end chr:1:629317:1;
+   faldo:reference chr:1 .
+
+chr:1:629317:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629317:1";
+   faldo:position 629317;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629322";
+     faldo:location chr:1:629322-629322:1;
+     kero:bin 1;
+     kero:caNum 531;
+     kero:cgNum 31
+   ] .
+
+chr:1:629322-629322:1 a faldo:Region;
+   rdfs:label "chromosome 1:629322-629322:1";
+   faldo:begin chr:1:629322:1;
+   faldo:end chr:1:629322:1;
+   faldo:reference chr:1 .
+
+chr:1:629322:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629322:1";
+   faldo:position 629322;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629515";
+     faldo:location chr:1:629515-629515:1;
+     kero:bin 1;
+     kero:caNum 16;
+     kero:cgNum 0
+   ] .
+
+chr:1:629515-629515:1 a faldo:Region;
+   rdfs:label "chromosome 1:629515-629515:1";
+   faldo:begin chr:1:629515:1;
+   faldo:end chr:1:629515:1;
+   faldo:reference chr:1 .
+
+chr:1:629515:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629515:1";
+   faldo:position 629515;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629545";
+     faldo:location chr:1:629545-629545:1;
+     kero:bin 2;
+     kero:caNum 22;
+     kero:cgNum 2
+   ] .
+
+chr:1:629545-629545:1 a faldo:Region;
+   rdfs:label "chromosome 1:629545-629545:1";
+   faldo:begin chr:1:629545:1;
+   faldo:end chr:1:629545:1;
+   faldo:reference chr:1 .
+
+chr:1:629545:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629545:1";
+   faldo:position 629545;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629596";
+     faldo:location chr:1:629596-629596:1;
+     kero:bin 1;
+     kero:caNum 18;
+     kero:cgNum 4
+   ] .
+
+chr:1:629596-629596:1 a faldo:Region;
+   rdfs:label "chromosome 1:629596-629596:1";
+   faldo:begin chr:1:629596:1;
+   faldo:end chr:1:629596:1;
+   faldo:reference chr:1 .
+
+chr:1:629596:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629596:1";
+   faldo:position 629596;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629609";
+     faldo:location chr:1:629609-629609:1;
+     kero:bin 1;
+     kero:caNum 12;
+     kero:cgNum 4
+   ] .
+
+chr:1:629609-629609:1 a faldo:Region;
+   rdfs:label "chromosome 1:629609-629609:1";
+   faldo:begin chr:1:629609:1;
+   faldo:end chr:1:629609:1;
+   faldo:reference chr:1 .
+
+chr:1:629609:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629609:1";
+   faldo:position 629609;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629633";
+     faldo:location chr:1:629633-629633:1;
+     kero:bin 1;
+     kero:caNum 29;
+     kero:cgNum 8
+   ] .
+
+chr:1:629633-629633:1 a faldo:Region;
+   rdfs:label "chromosome 1:629633-629633:1";
+   faldo:begin chr:1:629633:1;
+   faldo:end chr:1:629633:1;
+   faldo:reference chr:1 .
+
+chr:1:629633:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629633:1";
+   faldo:position 629633;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629660";
+     faldo:location chr:1:629660-629660:1;
+     kero:bin 2;
+     kero:caNum 143;
+     kero:cgNum 14
+   ] .
+
+chr:1:629660-629660:1 a faldo:Region;
+   rdfs:label "chromosome 1:629660-629660:1";
+   faldo:begin chr:1:629660:1;
+   faldo:end chr:1:629660:1;
+   faldo:reference chr:1 .
+
+chr:1:629660:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629660:1";
+   faldo:position 629660;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629701";
+     faldo:location chr:1:629701-629701:1;
+     kero:bin 1;
+     kero:caNum 289;
+     kero:cgNum 19
+   ] .
+
+chr:1:629701-629701:1 a faldo:Region;
+   rdfs:label "chromosome 1:629701-629701:1";
+   faldo:begin chr:1:629701:1;
+   faldo:end chr:1:629701:1;
+   faldo:reference chr:1 .
+
+chr:1:629701:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629701:1";
+   faldo:position 629701;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629710";
+     faldo:location chr:1:629710-629710:1;
+     kero:bin 2;
+     kero:caNum 314;
+     kero:cgNum 11
+   ] .
+
+chr:1:629710-629710:1 a faldo:Region;
+   rdfs:label "chromosome 1:629710-629710:1";
+   faldo:begin chr:1:629710:1;
+   faldo:end chr:1:629710:1;
+   faldo:reference chr:1 .
+
+chr:1:629710:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629710:1";
+   faldo:position 629710;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629790";
+     faldo:location chr:1:629790-629790:1;
+     kero:bin 1;
+     kero:caNum 263;
+     kero:cgNum 18
+   ] .
+
+chr:1:629790-629790:1 a faldo:Region;
+   rdfs:label "chromosome 1:629790-629790:1";
+   faldo:begin chr:1:629790:1;
+   faldo:end chr:1:629790:1;
+   faldo:reference chr:1 .
+
+chr:1:629790:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629790:1";
+   faldo:position 629790;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629824";
+     faldo:location chr:1:629824-629824:1;
+     kero:bin 2;
+     kero:caNum 261;
+     kero:cgNum 24
+   ] .
+
+chr:1:629824-629824:1 a faldo:Region;
+   rdfs:label "chromosome 1:629824-629824:1";
+   faldo:begin chr:1:629824:1;
+   faldo:end chr:1:629824:1;
+   faldo:reference chr:1 .
+
+chr:1:629824:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629824:1";
+   faldo:position 629824;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629834";
+     faldo:location chr:1:629834-629834:1;
+     kero:bin 1;
+     kero:caNum 224;
+     kero:cgNum 27
+   ] .
+
+chr:1:629834-629834:1 a faldo:Region;
+   rdfs:label "chromosome 1:629834-629834:1";
+   faldo:begin chr:1:629834:1;
+   faldo:end chr:1:629834:1;
+   faldo:reference chr:1 .
+
+chr:1:629834:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629834:1";
+   faldo:position 629834;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:629882";
+     faldo:location chr:1:629882-629882:1;
+     kero:bin 1;
+     kero:caNum 96;
+     kero:cgNum 26
+   ] .
+
+chr:1:629882-629882:1 a faldo:Region;
+   rdfs:label "chromosome 1:629882-629882:1";
+   faldo:begin chr:1:629882:1;
+   faldo:end chr:1:629882:1;
+   faldo:reference chr:1 .
+
+chr:1:629882:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:629882:1";
+   faldo:position 629882;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630017";
+     faldo:location chr:1:630017-630017:1;
+     kero:bin 1;
+     kero:caNum 5;
+     kero:cgNum 27
+   ] .
+
+chr:1:630017-630017:1 a faldo:Region;
+   rdfs:label "chromosome 1:630017-630017:1";
+   faldo:begin chr:1:630017:1;
+   faldo:end chr:1:630017:1;
+   faldo:reference chr:1 .
+
+chr:1:630017:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630017:1";
+   faldo:position 630017;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630089";
+     faldo:location chr:1:630089-630089:1;
+     kero:bin 2;
+     kero:caNum 13;
+     kero:cgNum 36
+   ] .
+
+chr:1:630089-630089:1 a faldo:Region;
+   rdfs:label "chromosome 1:630089-630089:1";
+   faldo:begin chr:1:630089:1;
+   faldo:end chr:1:630089:1;
+   faldo:reference chr:1 .
+
+chr:1:630089:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630089:1";
+   faldo:position 630089;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630165";
+     faldo:location chr:1:630165-630165:1;
+     kero:bin 2;
+     kero:caNum 7;
+     kero:cgNum 31
+   ] .
+
+chr:1:630165-630165:1 a faldo:Region;
+   rdfs:label "chromosome 1:630165-630165:1";
+   faldo:begin chr:1:630165:1;
+   faldo:end chr:1:630165:1;
+   faldo:reference chr:1 .
+
+chr:1:630165:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630165:1";
+   faldo:position 630165;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630223";
+     faldo:location chr:1:630223-630223:1;
+     kero:bin 1;
+     kero:caNum 40;
+     kero:cgNum 27
+   ] .
+
+chr:1:630223-630223:1 a faldo:Region;
+   rdfs:label "chromosome 1:630223-630223:1";
+   faldo:begin chr:1:630223:1;
+   faldo:end chr:1:630223:1;
+   faldo:reference chr:1 .
+
+chr:1:630223:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630223:1";
+   faldo:position 630223;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630281";
+     faldo:location chr:1:630281-630281:1;
+     kero:bin 2;
+     kero:caNum 449;
+     kero:cgNum 26
+   ] .
+
+chr:1:630281-630281:1 a faldo:Region;
+   rdfs:label "chromosome 1:630281-630281:1";
+   faldo:begin chr:1:630281:1;
+   faldo:end chr:1:630281:1;
+   faldo:reference chr:1 .
+
+chr:1:630281:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630281:1";
+   faldo:position 630281;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630333";
+     faldo:location chr:1:630333-630333:1;
+     kero:bin 8;
+     kero:caNum 675;
+     kero:cgNum 26
+   ] .
+
+chr:1:630333-630333:1 a faldo:Region;
+   rdfs:label "chromosome 1:630333-630333:1";
+   faldo:begin chr:1:630333:1;
+   faldo:end chr:1:630333:1;
+   faldo:reference chr:1 .
+
+chr:1:630333:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630333:1";
+   faldo:position 630333;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630406";
+     faldo:location chr:1:630406-630406:1;
+     kero:bin 2;
+     kero:caNum 589;
+     kero:cgNum 27
+   ] .
+
+chr:1:630406-630406:1 a faldo:Region;
+   rdfs:label "chromosome 1:630406-630406:1";
+   faldo:begin chr:1:630406:1;
+   faldo:end chr:1:630406:1;
+   faldo:reference chr:1 .
+
+chr:1:630406:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630406:1";
+   faldo:position 630406;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630413";
+     faldo:location chr:1:630413-630413:1;
+     kero:bin 1;
+     kero:caNum 559;
+     kero:cgNum 24
+   ] .
+
+chr:1:630413-630413:1 a faldo:Region;
+   rdfs:label "chromosome 1:630413-630413:1";
+   faldo:begin chr:1:630413:1;
+   faldo:end chr:1:630413:1;
+   faldo:reference chr:1 .
+
+chr:1:630413:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630413:1";
+   faldo:position 630413;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630440";
+     faldo:location chr:1:630440-630440:1;
+     kero:bin 1;
+     kero:caNum 347;
+     kero:cgNum 20
+   ] .
+
+chr:1:630440-630440:1 a faldo:Region;
+   rdfs:label "chromosome 1:630440-630440:1";
+   faldo:begin chr:1:630440:1;
+   faldo:end chr:1:630440:1;
+   faldo:reference chr:1 .
+
+chr:1:630440:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630440:1";
+   faldo:position 630440;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630522";
+     faldo:location chr:1:630522-630522:1;
+     kero:bin 2;
+     kero:caNum 5;
+     kero:cgNum 21
+   ] .
+
+chr:1:630522-630522:1 a faldo:Region;
+   rdfs:label "chromosome 1:630522-630522:1";
+   faldo:begin chr:1:630522:1;
+   faldo:end chr:1:630522:1;
+   faldo:reference chr:1 .
+
+chr:1:630522:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630522:1";
+   faldo:position 630522;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630569";
+     faldo:location chr:1:630569-630569:1;
+     kero:bin 1;
+     kero:caNum 7;
+     kero:cgNum 6
+   ] .
+
+chr:1:630569-630569:1 a faldo:Region;
+   rdfs:label "chromosome 1:630569-630569:1";
+   faldo:begin chr:1:630569:1;
+   faldo:end chr:1:630569:1;
+   faldo:reference chr:1 .
+
+chr:1:630569:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630569:1";
+   faldo:position 630569;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630629";
+     faldo:location chr:1:630629-630629:1;
+     kero:bin 2;
+     kero:caNum 13;
+     kero:cgNum 12
+   ] .
+
+chr:1:630629-630629:1 a faldo:Region;
+   rdfs:label "chromosome 1:630629-630629:1";
+   faldo:begin chr:1:630629:1;
+   faldo:end chr:1:630629:1;
+   faldo:reference chr:1 .
+
+chr:1:630629:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630629:1";
+   faldo:position 630629;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630792";
+     faldo:location chr:1:630792-630792:1;
+     kero:bin 2;
+     kero:caNum 12;
+     kero:cgNum 0
+   ] .
+
+chr:1:630792-630792:1 a faldo:Region;
+   rdfs:label "chromosome 1:630792-630792:1";
+   faldo:begin chr:1:630792:1;
+   faldo:end chr:1:630792:1;
+   faldo:reference chr:1 .
+
+chr:1:630792:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630792:1";
+   faldo:position 630792;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630907";
+     faldo:location chr:1:630907-630907:1;
+     kero:bin 2;
+     kero:caNum 27;
+     kero:cgNum 1
+   ] .
+
+chr:1:630907-630907:1 a faldo:Region;
+   rdfs:label "chromosome 1:630907-630907:1";
+   faldo:begin chr:1:630907:1;
+   faldo:end chr:1:630907:1;
+   faldo:reference chr:1 .
+
+chr:1:630907:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630907:1";
+   faldo:position 630907;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630910";
+     faldo:location chr:1:630910-630910:1;
+     kero:bin 1;
+     kero:caNum 24;
+     kero:cgNum 2
+   ] .
+
+chr:1:630910-630910:1 a faldo:Region;
+   rdfs:label "chromosome 1:630910-630910:1";
+   faldo:begin chr:1:630910:1;
+   faldo:end chr:1:630910:1;
+   faldo:reference chr:1 .
+
+chr:1:630910:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630910:1";
+   faldo:position 630910;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630913";
+     faldo:location chr:1:630913-630913:1;
+     kero:bin 1;
+     kero:caNum 20;
+     kero:cgNum 2
+   ] .
+
+chr:1:630913-630913:1 a faldo:Region;
+   rdfs:label "chromosome 1:630913-630913:1";
+   faldo:begin chr:1:630913:1;
+   faldo:end chr:1:630913:1;
+   faldo:reference chr:1 .
+
+chr:1:630913:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630913:1";
+   faldo:position 630913;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630925";
+     faldo:location chr:1:630925-630925:1;
+     kero:bin 1;
+     kero:caNum 18;
+     kero:cgNum 2
+   ] .
+
+chr:1:630925-630925:1 a faldo:Region;
+   rdfs:label "chromosome 1:630925-630925:1";
+   faldo:begin chr:1:630925:1;
+   faldo:end chr:1:630925:1;
+   faldo:reference chr:1 .
+
+chr:1:630925:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630925:1";
+   faldo:position 630925;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630937";
+     faldo:location chr:1:630937-630937:1;
+     kero:bin 1;
+     kero:caNum 18;
+     kero:cgNum 1
+   ] .
+
+chr:1:630937-630937:1 a faldo:Region;
+   rdfs:label "chromosome 1:630937-630937:1";
+   faldo:begin chr:1:630937:1;
+   faldo:end chr:1:630937:1;
+   faldo:reference chr:1 .
+
+chr:1:630937:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630937:1";
+   faldo:position 630937;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:630960";
+     faldo:location chr:1:630960-630960:1;
+     kero:bin 1;
+     kero:caNum 12;
+     kero:cgNum 0
+   ] .
+
+chr:1:630960-630960:1 a faldo:Region;
+   rdfs:label "chromosome 1:630960-630960:1";
+   faldo:begin chr:1:630960:1;
+   faldo:end chr:1:630960:1;
+   faldo:reference chr:1 .
+
+chr:1:630960:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:630960:1";
+   faldo:position 630960;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631079";
+     faldo:location chr:1:631079-631079:1;
+     kero:bin 1;
+     kero:caNum 159;
+     kero:cgNum 8
+   ] .
+
+chr:1:631079-631079:1 a faldo:Region;
+   rdfs:label "chromosome 1:631079-631079:1";
+   faldo:begin chr:1:631079:1;
+   faldo:end chr:1:631079:1;
+   faldo:reference chr:1 .
+
+chr:1:631079:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631079:1";
+   faldo:position 631079;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631082";
+     faldo:location chr:1:631082-631082:1;
+     kero:bin 1;
+     kero:caNum 177;
+     kero:cgNum 8
+   ] .
+
+chr:1:631082-631082:1 a faldo:Region;
+   rdfs:label "chromosome 1:631082-631082:1";
+   faldo:begin chr:1:631082:1;
+   faldo:end chr:1:631082:1;
+   faldo:reference chr:1 .
+
+chr:1:631082:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631082:1";
+   faldo:position 631082;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631086";
+     faldo:location chr:1:631086-631086:1;
+     kero:bin 2;
+     kero:caNum 212;
+     kero:cgNum 7
+   ] .
+
+chr:1:631086-631086:1 a faldo:Region;
+   rdfs:label "chromosome 1:631086-631086:1";
+   faldo:begin chr:1:631086:1;
+   faldo:end chr:1:631086:1;
+   faldo:reference chr:1 .
+
+chr:1:631086:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631086:1";
+   faldo:position 631086;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631139";
+     faldo:location chr:1:631139-631139:1;
+     kero:bin 3;
+     kero:caNum 322;
+     kero:cgNum 10
+   ] .
+
+chr:1:631139-631139:1 a faldo:Region;
+   rdfs:label "chromosome 1:631139-631139:1";
+   faldo:begin chr:1:631139:1;
+   faldo:end chr:1:631139:1;
+   faldo:reference chr:1 .
+
+chr:1:631139:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631139:1";
+   faldo:position 631139;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631142";
+     faldo:location chr:1:631142-631142:1;
+     kero:bin 1;
+     kero:caNum 320;
+     kero:cgNum 8
+   ] .
+
+chr:1:631142-631142:1 a faldo:Region;
+   rdfs:label "chromosome 1:631142-631142:1";
+   faldo:begin chr:1:631142:1;
+   faldo:end chr:1:631142:1;
+   faldo:reference chr:1 .
+
+chr:1:631142:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631142:1";
+   faldo:position 631142;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631185";
+     faldo:location chr:1:631185-631185:1;
+     kero:bin 1;
+     kero:caNum 300;
+     kero:cgNum 7
+   ] .
+
+chr:1:631185-631185:1 a faldo:Region;
+   rdfs:label "chromosome 1:631185-631185:1";
+   faldo:begin chr:1:631185:1;
+   faldo:end chr:1:631185:1;
+   faldo:reference chr:1 .
+
+chr:1:631185:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631185:1";
+   faldo:position 631185;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631190";
+     faldo:location chr:1:631190-631190:1;
+     kero:bin 1;
+     kero:caNum 274;
+     kero:cgNum 12
+   ] .
+
+chr:1:631190-631190:1 a faldo:Region;
+   rdfs:label "chromosome 1:631190-631190:1";
+   faldo:begin chr:1:631190:1;
+   faldo:end chr:1:631190:1;
+   faldo:reference chr:1 .
+
+chr:1:631190:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631190:1";
+   faldo:position 631190;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631223";
+     faldo:location chr:1:631223-631223:1;
+     kero:bin 2;
+     kero:caNum 208;
+     kero:cgNum 10
+   ] .
+
+chr:1:631223-631223:1 a faldo:Region;
+   rdfs:label "chromosome 1:631223-631223:1";
+   faldo:begin chr:1:631223:1;
+   faldo:end chr:1:631223:1;
+   faldo:reference chr:1 .
+
+chr:1:631223:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631223:1";
+   faldo:position 631223;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631238";
+     faldo:location chr:1:631238-631238:1;
+     kero:bin 1;
+     kero:caNum 172;
+     kero:cgNum 6
+   ] .
+
+chr:1:631238-631238:1 a faldo:Region;
+   rdfs:label "chromosome 1:631238-631238:1";
+   faldo:begin chr:1:631238:1;
+   faldo:end chr:1:631238:1;
+   faldo:reference chr:1 .
+
+chr:1:631238:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631238:1";
+   faldo:position 631238;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631244";
+     faldo:location chr:1:631244-631244:1;
+     kero:bin 1;
+     kero:caNum 143;
+     kero:cgNum 8
+   ] .
+
+chr:1:631244-631244:1 a faldo:Region;
+   rdfs:label "chromosome 1:631244-631244:1";
+   faldo:begin chr:1:631244:1;
+   faldo:end chr:1:631244:1;
+   faldo:reference chr:1 .
+
+chr:1:631244:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631244:1";
+   faldo:position 631244;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631298";
+     faldo:location chr:1:631298-631298:1;
+     kero:bin 1;
+     kero:caNum 77;
+     kero:cgNum 2
+   ] .
+
+chr:1:631298-631298:1 a faldo:Region;
+   rdfs:label "chromosome 1:631298-631298:1";
+   faldo:begin chr:1:631298:1;
+   faldo:end chr:1:631298:1;
+   faldo:reference chr:1 .
+
+chr:1:631298:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631298:1";
+   faldo:position 631298;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631334";
+     faldo:location chr:1:631334-631334:1;
+     kero:bin 2;
+     kero:caNum 48;
+     kero:cgNum 0
+   ] .
+
+chr:1:631334-631334:1 a faldo:Region;
+   rdfs:label "chromosome 1:631334-631334:1";
+   faldo:begin chr:1:631334:1;
+   faldo:end chr:1:631334:1;
+   faldo:reference chr:1 .
+
+chr:1:631334:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631334:1";
+   faldo:position 631334;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631343";
+     faldo:location chr:1:631343-631343:1;
+     kero:bin 1;
+     kero:caNum 40;
+     kero:cgNum 2
+   ] .
+
+chr:1:631343-631343:1 a faldo:Region;
+   rdfs:label "chromosome 1:631343-631343:1";
+   faldo:begin chr:1:631343:1;
+   faldo:end chr:1:631343:1;
+   faldo:reference chr:1 .
+
+chr:1:631343:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631343:1";
+   faldo:position 631343;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631351";
+     faldo:location chr:1:631351-631351:1;
+     kero:bin 1;
+     kero:caNum 35;
+     kero:cgNum 0
+   ] .
+
+chr:1:631351-631351:1 a faldo:Region;
+   rdfs:label "chromosome 1:631351-631351:1";
+   faldo:begin chr:1:631351:1;
+   faldo:end chr:1:631351:1;
+   faldo:reference chr:1 .
+
+chr:1:631351:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631351:1";
+   faldo:position 631351;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631359";
+     faldo:location chr:1:631359-631359:1;
+     kero:bin 1;
+     kero:caNum 30;
+     kero:cgNum 0
+   ] .
+
+chr:1:631359-631359:1 a faldo:Region;
+   rdfs:label "chromosome 1:631359-631359:1";
+   faldo:begin chr:1:631359:1;
+   faldo:end chr:1:631359:1;
+   faldo:reference chr:1 .
+
+chr:1:631359:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631359:1";
+   faldo:position 631359;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631682";
+     faldo:location chr:1:631682-631682:1;
+     kero:bin 2;
+     kero:caNum 2;
+     kero:cgNum 6
+   ] .
+
+chr:1:631682-631682:1 a faldo:Region;
+   rdfs:label "chromosome 1:631682-631682:1";
+   faldo:begin chr:1:631682:1;
+   faldo:end chr:1:631682:1;
+   faldo:reference chr:1 .
+
+chr:1:631682:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631682:1";
+   faldo:position 631682;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631710";
+     faldo:location chr:1:631710-631710:1;
+     kero:bin 2;
+     kero:caNum 0;
+     kero:cgNum 8
+   ] .
+
+chr:1:631710-631710:1 a faldo:Region;
+   rdfs:label "chromosome 1:631710-631710:1";
+   faldo:begin chr:1:631710:1;
+   faldo:end chr:1:631710:1;
+   faldo:reference chr:1 .
+
+chr:1:631710:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631710:1";
+   faldo:position 631710;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631733";
+     faldo:location chr:1:631733-631733:1;
+     kero:bin 1;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:631733-631733:1 a faldo:Region;
+   rdfs:label "chromosome 1:631733-631733:1";
+   faldo:begin chr:1:631733:1;
+   faldo:end chr:1:631733:1;
+   faldo:reference chr:1 .
+
+chr:1:631733:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631733:1";
+   faldo:position 631733;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631742";
+     faldo:location chr:1:631742-631742:1;
+     kero:bin 1;
+     kero:caNum 0;
+     kero:cgNum 6
+   ] .
+
+chr:1:631742-631742:1 a faldo:Region;
+   rdfs:label "chromosome 1:631742-631742:1";
+   faldo:begin chr:1:631742:1;
+   faldo:end chr:1:631742:1;
+   faldo:reference chr:1 .
+
+chr:1:631742:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631742:1";
+   faldo:position 631742;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631859";
+     faldo:location chr:1:631859-631859:1;
+     kero:bin 2;
+     kero:caNum 5;
+     kero:cgNum 0
+   ] .
+
+chr:1:631859-631859:1 a faldo:Region;
+   rdfs:label "chromosome 1:631859-631859:1";
+   faldo:begin chr:1:631859:1;
+   faldo:end chr:1:631859:1;
+   faldo:reference chr:1 .
+
+chr:1:631859:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631859:1";
+   faldo:position 631859;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631932";
+     faldo:location chr:1:631932-631932:1;
+     kero:bin 1;
+     kero:caNum 75;
+     kero:cgNum 0
+   ] .
+
+chr:1:631932-631932:1 a faldo:Region;
+   rdfs:label "chromosome 1:631932-631932:1";
+   faldo:begin chr:1:631932:1;
+   faldo:end chr:1:631932:1;
+   faldo:reference chr:1 .
+
+chr:1:631932:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631932:1";
+   faldo:position 631932;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631968";
+     faldo:location chr:1:631968-631968:1;
+     kero:bin 1;
+     kero:caNum 109;
+     kero:cgNum 0
+   ] .
+
+chr:1:631968-631968:1 a faldo:Region;
+   rdfs:label "chromosome 1:631968-631968:1";
+   faldo:begin chr:1:631968:1;
+   faldo:end chr:1:631968:1;
+   faldo:reference chr:1 .
+
+chr:1:631968:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631968:1";
+   faldo:position 631968;
+   faldo:reference chr:1 .
+
+<ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/bs_data_9606_LC2ad_reduced.tab.gz> kero:hasMethylationSite [
+     a so:SO0000306,
+       faldo:Region;
+     rdfs:label "1:631978";
+     faldo:location chr:1:631978-631978:1;
+     kero:bin 1;
+     kero:caNum 133;
+     kero:cgNum 1
+   ] .
+
+chr:1:631978-631978:1 a faldo:Region;
+   rdfs:label "chromosome 1:631978-631978:1";
+   faldo:begin chr:1:631978:1;
+   faldo:end chr:1:631978:1;
+   faldo:reference chr:1 .
+
+chr:1:631978:1 a faldo:ExactPosition,
+     faldo:ForwardStrandPosition;
+   rdfs:label "chromosome 1:631978:1";
+   faldo:position 631978;
+   faldo:reference chr:1 .
