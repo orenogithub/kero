@@ -52,7 +52,6 @@ Zlib::GzipReader.open(file).each do |line|
   g << [file_name, kero.hasMethylationSite, id]
 
   g << [id, RDF.type, so.SO_0000306] #A nucleotide modified by methylation.
-  g << [id, RDF.type, faldo.Region]
   g << [id, rdfs.label, "#{chr}:#{pos}"]
   g << [id, kero.cgNum, cg.to_i]
   g << [id, kero.caNum, ca.to_i]
