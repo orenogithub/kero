@@ -1,2212 +1,2422 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix faldo: <http://biohackathon.org/resource/faldo#> .
-@prefix so: <http://purl.obolibrary.org/obo/> .
 @prefix kero: <http://kero.hgc.jp/ontology/kero.owl#> .
-@prefix chr: <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/> .
-@prefix bs: <http://kero.hgc.jp/rdf/BSseq/> .
-@prefix file: <ftp://ftp.hgc.jp/pub/hgc/db/dbtss/dbtss_ver9/hg38/BSseq/hg38_liftover/> .
+@prefix data: <http://kero.hgc.jp/data/kero/9/BSseq/> .
+@prefix resource: <http://kero.hgc.jp/resource/homo_sapiens/hg38/> .
+@prefix dataset: <http://kero.hgc.jp/dataset/kero/9/BSseq/> .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz a kero:MethylSeqFile;
-   rdfs:label "BS-seq of LC2ad" .
+dataset:LC2ad a kero:MethylSeqDataset;
+   rdfs:label "kero BS-seq dataset of LC2ad";
+   dcterms:contributor "Shin Kawano";
+   dcterms:created "2016-05-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+   dcterms:description "kero BS-seq dataset of LC2ad";
+   dcterms:identifier "LC2ad";
+   dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/>;
+   dcterms:publisher <http://dbcls.rois.ac.jp/>;
+   pav:version "2016-05-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+   foaf:page <http://kero.hgc.jp> .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_1 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_1 .
 
-bs:LC2ad_1 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:11210";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11210-11210>;
+data:LC2ad_1 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:11210";
+   faldo:location resource:1_11210-11210;
    kero:bin 1;
    kero:caNum 2;
    kero:cgNum 3;
-   dct:identifier "LC2ad_1" .
+   dcterms:identifier "LC2ad_1" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11210-11210> a faldo:Region;
-   rdfs:label "chr1:11210-11210";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11210>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11210>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_11210-11210 a faldo:Region;
+   rdfs:label "chromosome 1:11210-11210";
+   faldo:begin resource:1_11210;
+   faldo:end resource:1_11210;
+   faldo:reference resource:1;
+   dcterms:identifier "1_11210-11210" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11210> a faldo:ExactPosition,
+resource:1_11210 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:11210";
+   rdfs:label "chromosome 1:11210";
    faldo:position 11210;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11210" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_2 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_2 .
 
-bs:LC2ad_2 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:11226";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11226-11226>;
+data:LC2ad_2 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:11226";
+   faldo:location resource:1_11226-11226;
    kero:bin 1;
    kero:caNum 2;
    kero:cgNum 3;
-   dct:identifier "LC2ad_2" .
+   dcterms:identifier "LC2ad_2" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11226-11226> a faldo:Region;
-   rdfs:label "chr1:11226-11226";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11226>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11226>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_11226-11226 a faldo:Region;
+   rdfs:label "chromosome 1:11226-11226";
+   faldo:begin resource:1_11226;
+   faldo:end resource:1_11226;
+   faldo:reference resource:1;
+   dcterms:identifier "1_11226-11226" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11226> a faldo:ExactPosition,
+resource:1_11226 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:11226";
+   rdfs:label "chromosome 1:11226";
    faldo:position 11226;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11226" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_3 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_3 .
 
-bs:LC2ad_3 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:11239";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11239-11239>;
+data:LC2ad_3 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:11239";
+   faldo:location resource:1_11239-11239;
    kero:bin 1;
    kero:caNum 6;
    kero:cgNum 1;
-   dct:identifier "LC2ad_3" .
+   dcterms:identifier "LC2ad_3" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11239-11239> a faldo:Region;
-   rdfs:label "chr1:11239-11239";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11239>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11239>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_11239-11239 a faldo:Region;
+   rdfs:label "chromosome 1:11239-11239";
+   faldo:begin resource:1_11239;
+   faldo:end resource:1_11239;
+   faldo:reference resource:1;
+   dcterms:identifier "1_11239-11239" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11239> a faldo:ExactPosition,
+resource:1_11239 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:11239";
+   rdfs:label "chromosome 1:11239";
    faldo:position 11239;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11239" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_4 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_4 .
 
-bs:LC2ad_4 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:11284";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11284-11284>;
+data:LC2ad_4 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:11284";
+   faldo:location resource:1_11284-11284;
    kero:bin 1;
    kero:caNum 7;
    kero:cgNum 2;
-   dct:identifier "LC2ad_4" .
+   dcterms:identifier "LC2ad_4" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11284-11284> a faldo:Region;
-   rdfs:label "chr1:11284-11284";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11284>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11284>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_11284-11284 a faldo:Region;
+   rdfs:label "chromosome 1:11284-11284";
+   faldo:begin resource:1_11284;
+   faldo:end resource:1_11284;
+   faldo:reference resource:1;
+   dcterms:identifier "1_11284-11284" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11284> a faldo:ExactPosition,
+resource:1_11284 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:11284";
+   rdfs:label "chromosome 1:11284";
    faldo:position 11284;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11284" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_5 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_5 .
 
-bs:LC2ad_5 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:11297";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11297-11297>;
+data:LC2ad_5 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:11297";
+   faldo:location resource:1_11297-11297;
    kero:bin 2;
    kero:caNum 8;
    kero:cgNum 4;
-   dct:identifier "LC2ad_5" .
+   dcterms:identifier "LC2ad_5" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11297-11297> a faldo:Region;
-   rdfs:label "chr1:11297-11297";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11297>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11297>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_11297-11297 a faldo:Region;
+   rdfs:label "chromosome 1:11297-11297";
+   faldo:begin resource:1_11297;
+   faldo:end resource:1_11297;
+   faldo:reference resource:1;
+   dcterms:identifier "1_11297-11297" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11297> a faldo:ExactPosition,
+resource:1_11297 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:11297";
+   rdfs:label "chromosome 1:11297";
    faldo:position 11297;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11297" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_6 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_6 .
 
-bs:LC2ad_6 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:11300";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11300-11300>;
+data:LC2ad_6 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:11300";
+   faldo:location resource:1_11300-11300;
    kero:bin 4;
    kero:caNum 9;
    kero:cgNum 5;
-   dct:identifier "LC2ad_6" .
+   dcterms:identifier "LC2ad_6" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11300-11300> a faldo:Region;
-   rdfs:label "chr1:11300-11300";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11300>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11300>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_11300-11300 a faldo:Region;
+   rdfs:label "chromosome 1:11300-11300";
+   faldo:begin resource:1_11300;
+   faldo:end resource:1_11300;
+   faldo:reference resource:1;
+   dcterms:identifier "1_11300-11300" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11300> a faldo:ExactPosition,
+resource:1_11300 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:11300";
+   rdfs:label "chromosome 1:11300";
    faldo:position 11300;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11300" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_7 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_7 .
 
-bs:LC2ad_7 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:11343";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11343-11343>;
+data:LC2ad_7 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:11343";
+   faldo:location resource:1_11343-11343;
    kero:bin 1;
    kero:caNum 5;
    kero:cgNum 5;
-   dct:identifier "LC2ad_7" .
+   dcterms:identifier "LC2ad_7" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11343-11343> a faldo:Region;
-   rdfs:label "chr1:11343-11343";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11343>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11343>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_11343-11343 a faldo:Region;
+   rdfs:label "chromosome 1:11343-11343";
+   faldo:begin resource:1_11343;
+   faldo:end resource:1_11343;
+   faldo:reference resource:1;
+   dcterms:identifier "1_11343-11343" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11343> a faldo:ExactPosition,
+resource:1_11343 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:11343";
+   rdfs:label "chromosome 1:11343";
    faldo:position 11343;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11343" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_8 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_8 .
 
-bs:LC2ad_8 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:11346";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11346-11346>;
+data:LC2ad_8 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:11346";
+   faldo:location resource:1_11346-11346;
    kero:bin 1;
    kero:caNum 5;
    kero:cgNum 5;
-   dct:identifier "LC2ad_8" .
+   dcterms:identifier "LC2ad_8" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11346-11346> a faldo:Region;
-   rdfs:label "chr1:11346-11346";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11346>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11346>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_11346-11346 a faldo:Region;
+   rdfs:label "chromosome 1:11346-11346";
+   faldo:begin resource:1_11346;
+   faldo:end resource:1_11346;
+   faldo:reference resource:1;
+   dcterms:identifier "1_11346-11346" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:11346> a faldo:ExactPosition,
+resource:1_11346 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:11346";
+   rdfs:label "chromosome 1:11346";
    faldo:position 11346;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11346" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_9 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_9 .
 
-bs:LC2ad_9 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:16869";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:16869-16869>;
+data:LC2ad_9 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:16869";
+   faldo:location resource:1_16869-16869;
    kero:bin 3;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_9" .
+   dcterms:identifier "LC2ad_9" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:16869-16869> a faldo:Region;
-   rdfs:label "chr1:16869-16869";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:16869>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:16869>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_16869-16869 a faldo:Region;
+   rdfs:label "chromosome 1:16869-16869";
+   faldo:begin resource:1_16869;
+   faldo:end resource:1_16869;
+   faldo:reference resource:1;
+   dcterms:identifier "1_16869-16869" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:16869> a faldo:ExactPosition,
+resource:1_16869 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:16869";
+   rdfs:label "chromosome 1:16869";
    faldo:position 16869;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_16869" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_10 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_10 .
 
-bs:LC2ad_10 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:68056";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68056-68056>;
+data:LC2ad_10 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:68056";
+   faldo:location resource:1_68056-68056;
    kero:bin 2;
    kero:caNum 7;
    kero:cgNum 14;
-   dct:identifier "LC2ad_10" .
+   dcterms:identifier "LC2ad_10" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68056-68056> a faldo:Region;
-   rdfs:label "chr1:68056-68056";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68056>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68056>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_68056-68056 a faldo:Region;
+   rdfs:label "chromosome 1:68056-68056";
+   faldo:begin resource:1_68056;
+   faldo:end resource:1_68056;
+   faldo:reference resource:1;
+   dcterms:identifier "1_68056-68056" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68056> a faldo:ExactPosition,
+resource:1_68056 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:68056";
+   rdfs:label "chromosome 1:68056";
    faldo:position 68056;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68056" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_11 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_11 .
 
-bs:LC2ad_11 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:68122";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68122-68122>;
+data:LC2ad_11 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:68122";
+   faldo:location resource:1_68122-68122;
    kero:bin 2;
    kero:caNum 0;
    kero:cgNum 31;
-   dct:identifier "LC2ad_11" .
+   dcterms:identifier "LC2ad_11" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68122-68122> a faldo:Region;
-   rdfs:label "chr1:68122-68122";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68122>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68122>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_68122-68122 a faldo:Region;
+   rdfs:label "chromosome 1:68122-68122";
+   faldo:begin resource:1_68122;
+   faldo:end resource:1_68122;
+   faldo:reference resource:1;
+   dcterms:identifier "1_68122-68122" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68122> a faldo:ExactPosition,
+resource:1_68122 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:68122";
+   rdfs:label "chromosome 1:68122";
    faldo:position 68122;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68122" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_12 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_12 .
 
-bs:LC2ad_12 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:68239";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68239-68239>;
+data:LC2ad_12 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:68239";
+   faldo:location resource:1_68239-68239;
    kero:bin 1;
    kero:caNum 48;
    kero:cgNum 85;
-   dct:identifier "LC2ad_12" .
+   dcterms:identifier "LC2ad_12" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68239-68239> a faldo:Region;
-   rdfs:label "chr1:68239-68239";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68239>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68239>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_68239-68239 a faldo:Region;
+   rdfs:label "chromosome 1:68239-68239";
+   faldo:begin resource:1_68239;
+   faldo:end resource:1_68239;
+   faldo:reference resource:1;
+   dcterms:identifier "1_68239-68239" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68239> a faldo:ExactPosition,
+resource:1_68239 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:68239";
+   rdfs:label "chromosome 1:68239";
    faldo:position 68239;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68239" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_13 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_13 .
 
-bs:LC2ad_13 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:68246";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68246-68246>;
+data:LC2ad_13 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:68246";
+   faldo:location resource:1_68246-68246;
    kero:bin 5;
    kero:caNum 38;
    kero:cgNum 100;
-   dct:identifier "LC2ad_13" .
+   dcterms:identifier "LC2ad_13" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68246-68246> a faldo:Region;
-   rdfs:label "chr1:68246-68246";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68246>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68246>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_68246-68246 a faldo:Region;
+   rdfs:label "chromosome 1:68246-68246";
+   faldo:begin resource:1_68246;
+   faldo:end resource:1_68246;
+   faldo:reference resource:1;
+   dcterms:identifier "1_68246-68246" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:68246> a faldo:ExactPosition,
+resource:1_68246 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:68246";
+   rdfs:label "chromosome 1:68246";
    faldo:position 68246;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68246" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_14 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_14 .
 
-bs:LC2ad_14 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:128886";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:128886-128886>;
+data:LC2ad_14 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:128886";
+   faldo:location resource:1_128886-128886;
    kero:bin 2;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_14" .
+   dcterms:identifier "LC2ad_14" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:128886-128886> a faldo:Region;
-   rdfs:label "chr1:128886-128886";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:128886>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:128886>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_128886-128886 a faldo:Region;
+   rdfs:label "chromosome 1:128886-128886";
+   faldo:begin resource:1_128886;
+   faldo:end resource:1_128886;
+   faldo:reference resource:1;
+   dcterms:identifier "1_128886-128886" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:128886> a faldo:ExactPosition,
+resource:1_128886 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:128886";
+   rdfs:label "chromosome 1:128886";
    faldo:position 128886;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_128886" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_15 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_15 .
 
-bs:LC2ad_15 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:128904";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:128904-128904>;
+data:LC2ad_15 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:128904";
+   faldo:location resource:1_128904-128904;
    kero:bin 5;
    kero:caNum 0;
    kero:cgNum 7;
-   dct:identifier "LC2ad_15" .
+   dcterms:identifier "LC2ad_15" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:128904-128904> a faldo:Region;
-   rdfs:label "chr1:128904-128904";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:128904>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:128904>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_128904-128904 a faldo:Region;
+   rdfs:label "chromosome 1:128904-128904";
+   faldo:begin resource:1_128904;
+   faldo:end resource:1_128904;
+   faldo:reference resource:1;
+   dcterms:identifier "1_128904-128904" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:128904> a faldo:ExactPosition,
+resource:1_128904 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:128904";
+   rdfs:label "chromosome 1:128904";
    faldo:position 128904;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_128904" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_16 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_16 .
 
-bs:LC2ad_16 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:129054";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:129054-129054>;
+data:LC2ad_16 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:129054";
+   faldo:location resource:1_129054-129054;
    kero:bin 3;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_16" .
+   dcterms:identifier "LC2ad_16" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:129054-129054> a faldo:Region;
-   rdfs:label "chr1:129054-129054";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:129054>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:129054>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_129054-129054 a faldo:Region;
+   rdfs:label "chromosome 1:129054-129054";
+   faldo:begin resource:1_129054;
+   faldo:end resource:1_129054;
+   faldo:reference resource:1;
+   dcterms:identifier "1_129054-129054" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:129054> a faldo:ExactPosition,
+resource:1_129054 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:129054";
+   rdfs:label "chromosome 1:129054";
    faldo:position 129054;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_129054" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_17 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_17 .
 
-bs:LC2ad_17 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:258921";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258921-258921>;
+data:LC2ad_17 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:258921";
+   faldo:location resource:1_258921-258921;
    kero:bin 1;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_17" .
+   dcterms:identifier "LC2ad_17" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258921-258921> a faldo:Region;
-   rdfs:label "chr1:258921-258921";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258921>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258921>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_258921-258921 a faldo:Region;
+   rdfs:label "chromosome 1:258921-258921";
+   faldo:begin resource:1_258921;
+   faldo:end resource:1_258921;
+   faldo:reference resource:1;
+   dcterms:identifier "1_258921-258921" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258921> a faldo:ExactPosition,
+resource:1_258921 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:258921";
+   rdfs:label "chromosome 1:258921";
    faldo:position 258921;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258921" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_18 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_18 .
 
-bs:LC2ad_18 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:258931";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258931-258931>;
+data:LC2ad_18 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:258931";
+   faldo:location resource:1_258931-258931;
    kero:bin 1;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_18" .
+   dcterms:identifier "LC2ad_18" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258931-258931> a faldo:Region;
-   rdfs:label "chr1:258931-258931";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258931>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258931>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_258931-258931 a faldo:Region;
+   rdfs:label "chromosome 1:258931-258931";
+   faldo:begin resource:1_258931;
+   faldo:end resource:1_258931;
+   faldo:reference resource:1;
+   dcterms:identifier "1_258931-258931" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258931> a faldo:ExactPosition,
+resource:1_258931 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:258931";
+   rdfs:label "chromosome 1:258931";
    faldo:position 258931;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258931" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_19 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_19 .
 
-bs:LC2ad_19 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:258972";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258972-258972>;
+data:LC2ad_19 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:258972";
+   faldo:location resource:1_258972-258972;
    kero:bin 5;
    kero:caNum 10;
    kero:cgNum 0;
-   dct:identifier "LC2ad_19" .
+   dcterms:identifier "LC2ad_19" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258972-258972> a faldo:Region;
-   rdfs:label "chr1:258972-258972";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258972>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258972>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_258972-258972 a faldo:Region;
+   rdfs:label "chromosome 1:258972-258972";
+   faldo:begin resource:1_258972;
+   faldo:end resource:1_258972;
+   faldo:reference resource:1;
+   dcterms:identifier "1_258972-258972" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258972> a faldo:ExactPosition,
+resource:1_258972 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:258972";
+   rdfs:label "chromosome 1:258972";
    faldo:position 258972;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258972" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_20 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_20 .
 
-bs:LC2ad_20 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:258983";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258983-258983>;
+data:LC2ad_20 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:258983";
+   faldo:location resource:1_258983-258983;
    kero:bin 1;
    kero:caNum 0;
    kero:cgNum 10;
-   dct:identifier "LC2ad_20" .
+   dcterms:identifier "LC2ad_20" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258983-258983> a faldo:Region;
-   rdfs:label "chr1:258983-258983";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258983>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258983>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_258983-258983 a faldo:Region;
+   rdfs:label "chromosome 1:258983-258983";
+   faldo:begin resource:1_258983;
+   faldo:end resource:1_258983;
+   faldo:reference resource:1;
+   dcterms:identifier "1_258983-258983" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:258983> a faldo:ExactPosition,
+resource:1_258983 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:258983";
+   rdfs:label "chromosome 1:258983";
    faldo:position 258983;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258983" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_21 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_21 .
 
-bs:LC2ad_21 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:259011";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259011-259011>;
+data:LC2ad_21 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:259011";
+   faldo:location resource:1_259011-259011;
    kero:bin 3;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_21" .
+   dcterms:identifier "LC2ad_21" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259011-259011> a faldo:Region;
-   rdfs:label "chr1:259011-259011";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259011>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259011>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_259011-259011 a faldo:Region;
+   rdfs:label "chromosome 1:259011-259011";
+   faldo:begin resource:1_259011;
+   faldo:end resource:1_259011;
+   faldo:reference resource:1;
+   dcterms:identifier "1_259011-259011" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259011> a faldo:ExactPosition,
+resource:1_259011 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:259011";
+   rdfs:label "chromosome 1:259011";
    faldo:position 259011;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_259011" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_22 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_22 .
 
-bs:LC2ad_22 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:259017";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259017-259017>;
+data:LC2ad_22 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:259017";
+   faldo:location resource:1_259017-259017;
    kero:bin 1;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_22" .
+   dcterms:identifier "LC2ad_22" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259017-259017> a faldo:Region;
-   rdfs:label "chr1:259017-259017";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259017>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259017>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_259017-259017 a faldo:Region;
+   rdfs:label "chromosome 1:259017-259017";
+   faldo:begin resource:1_259017;
+   faldo:end resource:1_259017;
+   faldo:reference resource:1;
+   dcterms:identifier "1_259017-259017" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259017> a faldo:ExactPosition,
+resource:1_259017 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:259017";
+   rdfs:label "chromosome 1:259017";
    faldo:position 259017;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_259017" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_23 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_23 .
 
-bs:LC2ad_23 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:259023";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259023-259023>;
+data:LC2ad_23 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:259023";
+   faldo:location resource:1_259023-259023;
    kero:bin 1;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_23" .
+   dcterms:identifier "LC2ad_23" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259023-259023> a faldo:Region;
-   rdfs:label "chr1:259023-259023";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259023>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259023>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_259023-259023 a faldo:Region;
+   rdfs:label "chromosome 1:259023-259023";
+   faldo:begin resource:1_259023;
+   faldo:end resource:1_259023;
+   faldo:reference resource:1;
+   dcterms:identifier "1_259023-259023" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:259023> a faldo:ExactPosition,
+resource:1_259023 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:259023";
+   rdfs:label "chromosome 1:259023";
    faldo:position 259023;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_259023" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_24 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_24 .
 
-bs:LC2ad_24 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:280460";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:280460-280460>;
+data:LC2ad_24 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:280460";
+   faldo:location resource:1_280460-280460;
    kero:bin 4;
    kero:caNum 0;
    kero:cgNum 5;
-   dct:identifier "LC2ad_24" .
+   dcterms:identifier "LC2ad_24" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:280460-280460> a faldo:Region;
-   rdfs:label "chr1:280460-280460";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:280460>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:280460>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_280460-280460 a faldo:Region;
+   rdfs:label "chromosome 1:280460-280460";
+   faldo:begin resource:1_280460;
+   faldo:end resource:1_280460;
+   faldo:reference resource:1;
+   dcterms:identifier "1_280460-280460" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:280460> a faldo:ExactPosition,
+resource:1_280460 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:280460";
+   rdfs:label "chromosome 1:280460";
    faldo:position 280460;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_280460" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_25 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_25 .
 
-bs:LC2ad_25 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:280470";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:280470-280470>;
+data:LC2ad_25 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:280470";
+   faldo:location resource:1_280470-280470;
    kero:bin 1;
    kero:caNum 0;
    kero:cgNum 5;
-   dct:identifier "LC2ad_25" .
+   dcterms:identifier "LC2ad_25" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:280470-280470> a faldo:Region;
-   rdfs:label "chr1:280470-280470";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:280470>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:280470>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_280470-280470 a faldo:Region;
+   rdfs:label "chromosome 1:280470-280470";
+   faldo:begin resource:1_280470;
+   faldo:end resource:1_280470;
+   faldo:reference resource:1;
+   dcterms:identifier "1_280470-280470" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:280470> a faldo:ExactPosition,
+resource:1_280470 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:280470";
+   rdfs:label "chromosome 1:280470";
    faldo:position 280470;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_280470" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_26 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_26 .
 
-bs:LC2ad_26 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:365633";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:365633-365633>;
+data:LC2ad_26 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:365633";
+   faldo:location resource:1_365633-365633;
    kero:bin 5;
    kero:caNum 6;
    kero:cgNum 2;
-   dct:identifier "LC2ad_26" .
+   dcterms:identifier "LC2ad_26" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:365633-365633> a faldo:Region;
-   rdfs:label "chr1:365633-365633";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:365633>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:365633>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_365633-365633 a faldo:Region;
+   rdfs:label "chromosome 1:365633-365633";
+   faldo:begin resource:1_365633;
+   faldo:end resource:1_365633;
+   faldo:reference resource:1;
+   dcterms:identifier "1_365633-365633" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:365633> a faldo:ExactPosition,
+resource:1_365633 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:365633";
+   rdfs:label "chromosome 1:365633";
    faldo:position 365633;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_365633" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_27 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_27 .
 
-bs:LC2ad_27 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:365844";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:365844-365844>;
+data:LC2ad_27 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:365844";
+   faldo:location resource:1_365844-365844;
    kero:bin 2;
    kero:caNum 2;
    kero:cgNum 3;
-   dct:identifier "LC2ad_27" .
+   dcterms:identifier "LC2ad_27" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:365844-365844> a faldo:Region;
-   rdfs:label "chr1:365844-365844";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:365844>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:365844>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_365844-365844 a faldo:Region;
+   rdfs:label "chromosome 1:365844-365844";
+   faldo:begin resource:1_365844;
+   faldo:end resource:1_365844;
+   faldo:reference resource:1;
+   dcterms:identifier "1_365844-365844" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:365844> a faldo:ExactPosition,
+resource:1_365844 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:365844";
+   rdfs:label "chromosome 1:365844";
    faldo:position 365844;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_365844" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_28 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_28 .
 
-bs:LC2ad_28 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:494733";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:494733-494733>;
+data:LC2ad_28 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:494733";
+   faldo:location resource:1_494733-494733;
    kero:bin 5;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_28" .
+   dcterms:identifier "LC2ad_28" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:494733-494733> a faldo:Region;
-   rdfs:label "chr1:494733-494733";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:494733>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:494733>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_494733-494733 a faldo:Region;
+   rdfs:label "chromosome 1:494733-494733";
+   faldo:begin resource:1_494733;
+   faldo:end resource:1_494733;
+   faldo:reference resource:1;
+   dcterms:identifier "1_494733-494733" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:494733> a faldo:ExactPosition,
+resource:1_494733 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:494733";
+   rdfs:label "chromosome 1:494733";
    faldo:position 494733;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_494733" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_29 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_29 .
 
-bs:LC2ad_29 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:495429";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:495429-495429>;
+data:LC2ad_29 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:495429";
+   faldo:location resource:1_495429-495429;
    kero:bin 3;
    kero:caNum 4;
    kero:cgNum 1;
-   dct:identifier "LC2ad_29" .
+   dcterms:identifier "LC2ad_29" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:495429-495429> a faldo:Region;
-   rdfs:label "chr1:495429-495429";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:495429>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:495429>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_495429-495429 a faldo:Region;
+   rdfs:label "chromosome 1:495429-495429";
+   faldo:begin resource:1_495429;
+   faldo:end resource:1_495429;
+   faldo:reference resource:1;
+   dcterms:identifier "1_495429-495429" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:495429> a faldo:ExactPosition,
+resource:1_495429 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:495429";
+   rdfs:label "chromosome 1:495429";
    faldo:position 495429;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_495429" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_30 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_30 .
 
-bs:LC2ad_30 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:607035";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:607035-607035>;
+data:LC2ad_30 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:607035";
+   faldo:location resource:1_607035-607035;
    kero:bin 4;
    kero:caNum 0;
    kero:cgNum 5;
-   dct:identifier "LC2ad_30" .
+   dcterms:identifier "LC2ad_30" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:607035-607035> a faldo:Region;
-   rdfs:label "chr1:607035-607035";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:607035>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:607035>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_607035-607035 a faldo:Region;
+   rdfs:label "chromosome 1:607035-607035";
+   faldo:begin resource:1_607035;
+   faldo:end resource:1_607035;
+   faldo:reference resource:1;
+   dcterms:identifier "1_607035-607035" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:607035> a faldo:ExactPosition,
+resource:1_607035 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:607035";
+   rdfs:label "chromosome 1:607035";
    faldo:position 607035;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_607035" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_31 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_31 .
 
-bs:LC2ad_31 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:616188";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616188-616188>;
+data:LC2ad_31 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:616188";
+   faldo:location resource:1_616188-616188;
    kero:bin 2;
    kero:caNum 5;
    kero:cgNum 3;
-   dct:identifier "LC2ad_31" .
+   dcterms:identifier "LC2ad_31" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616188-616188> a faldo:Region;
-   rdfs:label "chr1:616188-616188";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616188>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616188>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_616188-616188 a faldo:Region;
+   rdfs:label "chromosome 1:616188-616188";
+   faldo:begin resource:1_616188;
+   faldo:end resource:1_616188;
+   faldo:reference resource:1;
+   dcterms:identifier "1_616188-616188" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616188> a faldo:ExactPosition,
+resource:1_616188 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:616188";
+   rdfs:label "chromosome 1:616188";
    faldo:position 616188;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616188" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_32 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_32 .
 
-bs:LC2ad_32 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:616271";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616271-616271>;
+data:LC2ad_32 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:616271";
+   faldo:location resource:1_616271-616271;
    kero:bin 4;
    kero:caNum 3;
    kero:cgNum 11;
-   dct:identifier "LC2ad_32" .
+   dcterms:identifier "LC2ad_32" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616271-616271> a faldo:Region;
-   rdfs:label "chr1:616271-616271";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616271>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616271>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_616271-616271 a faldo:Region;
+   rdfs:label "chromosome 1:616271-616271";
+   faldo:begin resource:1_616271;
+   faldo:end resource:1_616271;
+   faldo:reference resource:1;
+   dcterms:identifier "1_616271-616271" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616271> a faldo:ExactPosition,
+resource:1_616271 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:616271";
+   rdfs:label "chromosome 1:616271";
    faldo:position 616271;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616271" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_33 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_33 .
 
-bs:LC2ad_33 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:616289";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616289-616289>;
+data:LC2ad_33 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:616289";
+   faldo:location resource:1_616289-616289;
    kero:bin 1;
    kero:caNum 11;
    kero:cgNum 3;
-   dct:identifier "LC2ad_33" .
+   dcterms:identifier "LC2ad_33" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616289-616289> a faldo:Region;
-   rdfs:label "chr1:616289-616289";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616289>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616289>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_616289-616289 a faldo:Region;
+   rdfs:label "chromosome 1:616289-616289";
+   faldo:begin resource:1_616289;
+   faldo:end resource:1_616289;
+   faldo:reference resource:1;
+   dcterms:identifier "1_616289-616289" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616289> a faldo:ExactPosition,
+resource:1_616289 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:616289";
+   rdfs:label "chromosome 1:616289";
    faldo:position 616289;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616289" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_34 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_34 .
 
-bs:LC2ad_34 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:616308";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616308-616308>;
+data:LC2ad_34 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:616308";
+   faldo:location resource:1_616308-616308;
    kero:bin 2;
    kero:caNum 2;
    kero:cgNum 9;
-   dct:identifier "LC2ad_34" .
+   dcterms:identifier "LC2ad_34" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616308-616308> a faldo:Region;
-   rdfs:label "chr1:616308-616308";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616308>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616308>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_616308-616308 a faldo:Region;
+   rdfs:label "chromosome 1:616308-616308";
+   faldo:begin resource:1_616308;
+   faldo:end resource:1_616308;
+   faldo:reference resource:1;
+   dcterms:identifier "1_616308-616308" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616308> a faldo:ExactPosition,
+resource:1_616308 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:616308";
+   rdfs:label "chromosome 1:616308";
    faldo:position 616308;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616308" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_35 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_35 .
 
-bs:LC2ad_35 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:616357";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616357-616357>;
+data:LC2ad_35 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:616357";
+   faldo:location resource:1_616357-616357;
    kero:bin 1;
    kero:caNum 2;
    kero:cgNum 4;
-   dct:identifier "LC2ad_35" .
+   dcterms:identifier "LC2ad_35" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616357-616357> a faldo:Region;
-   rdfs:label "chr1:616357-616357";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616357>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616357>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_616357-616357 a faldo:Region;
+   rdfs:label "chromosome 1:616357-616357";
+   faldo:begin resource:1_616357;
+   faldo:end resource:1_616357;
+   faldo:reference resource:1;
+   dcterms:identifier "1_616357-616357" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:616357> a faldo:ExactPosition,
+resource:1_616357 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:616357";
+   rdfs:label "chromosome 1:616357";
    faldo:position 616357;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616357" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_36 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_36 .
 
-bs:LC2ad_36 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629091";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629091-629091>;
+data:LC2ad_36 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629091";
+   faldo:location resource:1_629091-629091;
    kero:bin 2;
    kero:caNum 19;
    kero:cgNum 5;
-   dct:identifier "LC2ad_36" .
+   dcterms:identifier "LC2ad_36" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629091-629091> a faldo:Region;
-   rdfs:label "chr1:629091-629091";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629091>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629091>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629091-629091 a faldo:Region;
+   rdfs:label "chromosome 1:629091-629091";
+   faldo:begin resource:1_629091;
+   faldo:end resource:1_629091;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629091-629091" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629091> a faldo:ExactPosition,
+resource:1_629091 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629091";
+   rdfs:label "chromosome 1:629091";
    faldo:position 629091;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629091" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_37 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_37 .
 
-bs:LC2ad_37 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629115";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629115-629115>;
+data:LC2ad_37 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629115";
+   faldo:location resource:1_629115-629115;
    kero:bin 1;
    kero:caNum 88;
    kero:cgNum 9;
-   dct:identifier "LC2ad_37" .
+   dcterms:identifier "LC2ad_37" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629115-629115> a faldo:Region;
-   rdfs:label "chr1:629115-629115";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629115>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629115>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629115-629115 a faldo:Region;
+   rdfs:label "chromosome 1:629115-629115";
+   faldo:begin resource:1_629115;
+   faldo:end resource:1_629115;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629115-629115" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629115> a faldo:ExactPosition,
+resource:1_629115 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629115";
+   rdfs:label "chromosome 1:629115";
    faldo:position 629115;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629115" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_38 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_38 .
 
-bs:LC2ad_38 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629121";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629121-629121>;
+data:LC2ad_38 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629121";
+   faldo:location resource:1_629121-629121;
    kero:bin 1;
    kero:caNum 111;
    kero:cgNum 6;
-   dct:identifier "LC2ad_38" .
+   dcterms:identifier "LC2ad_38" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629121-629121> a faldo:Region;
-   rdfs:label "chr1:629121-629121";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629121>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629121>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629121-629121 a faldo:Region;
+   rdfs:label "chromosome 1:629121-629121";
+   faldo:begin resource:1_629121;
+   faldo:end resource:1_629121;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629121-629121" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629121> a faldo:ExactPosition,
+resource:1_629121 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629121";
+   rdfs:label "chromosome 1:629121";
    faldo:position 629121;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629121" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_39 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_39 .
 
-bs:LC2ad_39 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629124";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629124-629124>;
+data:LC2ad_39 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629124";
+   faldo:location resource:1_629124-629124;
    kero:bin 1;
    kero:caNum 117;
    kero:cgNum 6;
-   dct:identifier "LC2ad_39" .
+   dcterms:identifier "LC2ad_39" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629124-629124> a faldo:Region;
-   rdfs:label "chr1:629124-629124";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629124>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629124>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629124-629124 a faldo:Region;
+   rdfs:label "chromosome 1:629124-629124";
+   faldo:begin resource:1_629124;
+   faldo:end resource:1_629124;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629124-629124" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629124> a faldo:ExactPosition,
+resource:1_629124 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629124";
+   rdfs:label "chromosome 1:629124";
    faldo:position 629124;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629124" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_40 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_40 .
 
-bs:LC2ad_40 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629136";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629136-629136>;
+data:LC2ad_40 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629136";
+   faldo:location resource:1_629136-629136;
    kero:bin 1;
    kero:caNum 139;
    kero:cgNum 6;
-   dct:identifier "LC2ad_40" .
+   dcterms:identifier "LC2ad_40" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629136-629136> a faldo:Region;
-   rdfs:label "chr1:629136-629136";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629136>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629136>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629136-629136 a faldo:Region;
+   rdfs:label "chromosome 1:629136-629136";
+   faldo:begin resource:1_629136;
+   faldo:end resource:1_629136;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629136-629136" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629136> a faldo:ExactPosition,
+resource:1_629136 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629136";
+   rdfs:label "chromosome 1:629136";
    faldo:position 629136;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629136" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_41 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_41 .
 
-bs:LC2ad_41 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629154";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629154-629154>;
+data:LC2ad_41 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629154";
+   faldo:location resource:1_629154-629154;
    kero:bin 2;
    kero:caNum 218;
    kero:cgNum 8;
-   dct:identifier "LC2ad_41" .
+   dcterms:identifier "LC2ad_41" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629154-629154> a faldo:Region;
-   rdfs:label "chr1:629154-629154";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629154>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629154>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629154-629154 a faldo:Region;
+   rdfs:label "chromosome 1:629154-629154";
+   faldo:begin resource:1_629154;
+   faldo:end resource:1_629154;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629154-629154" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629154> a faldo:ExactPosition,
+resource:1_629154 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629154";
+   rdfs:label "chromosome 1:629154";
    faldo:position 629154;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629154" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_42 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_42 .
 
-bs:LC2ad_42 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629220";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629220-629220>;
+data:LC2ad_42 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629220";
+   faldo:location resource:1_629220-629220;
    kero:bin 1;
    kero:caNum 541;
    kero:cgNum 11;
-   dct:identifier "LC2ad_42" .
+   dcterms:identifier "LC2ad_42" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629220-629220> a faldo:Region;
-   rdfs:label "chr1:629220-629220";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629220>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629220>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629220-629220 a faldo:Region;
+   rdfs:label "chromosome 1:629220-629220";
+   faldo:begin resource:1_629220;
+   faldo:end resource:1_629220;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629220-629220" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629220> a faldo:ExactPosition,
+resource:1_629220 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629220";
+   rdfs:label "chromosome 1:629220";
    faldo:position 629220;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629220" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_43 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_43 .
 
-bs:LC2ad_43 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629296";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629296-629296>;
+data:LC2ad_43 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629296";
+   faldo:location resource:1_629296-629296;
    kero:bin 4;
    kero:caNum 576;
    kero:cgNum 18;
-   dct:identifier "LC2ad_43" .
+   dcterms:identifier "LC2ad_43" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629296-629296> a faldo:Region;
-   rdfs:label "chr1:629296-629296";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629296>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629296>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629296-629296 a faldo:Region;
+   rdfs:label "chromosome 1:629296-629296";
+   faldo:begin resource:1_629296;
+   faldo:end resource:1_629296;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629296-629296" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629296> a faldo:ExactPosition,
+resource:1_629296 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629296";
+   rdfs:label "chromosome 1:629296";
    faldo:position 629296;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629296" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_44 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_44 .
 
-bs:LC2ad_44 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629311";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629311-629311>;
+data:LC2ad_44 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629311";
+   faldo:location resource:1_629311-629311;
    kero:bin 1;
    kero:caNum 547;
    kero:cgNum 19;
-   dct:identifier "LC2ad_44" .
+   dcterms:identifier "LC2ad_44" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629311-629311> a faldo:Region;
-   rdfs:label "chr1:629311-629311";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629311>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629311>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629311-629311 a faldo:Region;
+   rdfs:label "chromosome 1:629311-629311";
+   faldo:begin resource:1_629311;
+   faldo:end resource:1_629311;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629311-629311" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629311> a faldo:ExactPosition,
+resource:1_629311 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629311";
+   rdfs:label "chromosome 1:629311";
    faldo:position 629311;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629311" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_45 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_45 .
 
-bs:LC2ad_45 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629317";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629317-629317>;
+data:LC2ad_45 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629317";
+   faldo:location resource:1_629317-629317;
    kero:bin 2;
    kero:caNum 549;
    kero:cgNum 21;
-   dct:identifier "LC2ad_45" .
+   dcterms:identifier "LC2ad_45" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629317-629317> a faldo:Region;
-   rdfs:label "chr1:629317-629317";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629317>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629317>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629317-629317 a faldo:Region;
+   rdfs:label "chromosome 1:629317-629317";
+   faldo:begin resource:1_629317;
+   faldo:end resource:1_629317;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629317-629317" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629317> a faldo:ExactPosition,
+resource:1_629317 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629317";
+   rdfs:label "chromosome 1:629317";
    faldo:position 629317;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629317" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_46 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_46 .
 
-bs:LC2ad_46 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629322";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629322-629322>;
+data:LC2ad_46 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629322";
+   faldo:location resource:1_629322-629322;
    kero:bin 1;
    kero:caNum 531;
    kero:cgNum 31;
-   dct:identifier "LC2ad_46" .
+   dcterms:identifier "LC2ad_46" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629322-629322> a faldo:Region;
-   rdfs:label "chr1:629322-629322";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629322>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629322>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629322-629322 a faldo:Region;
+   rdfs:label "chromosome 1:629322-629322";
+   faldo:begin resource:1_629322;
+   faldo:end resource:1_629322;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629322-629322" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629322> a faldo:ExactPosition,
+resource:1_629322 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629322";
+   rdfs:label "chromosome 1:629322";
    faldo:position 629322;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629322" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_47 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_47 .
 
-bs:LC2ad_47 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629515";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629515-629515>;
+data:LC2ad_47 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629515";
+   faldo:location resource:1_629515-629515;
    kero:bin 1;
    kero:caNum 16;
    kero:cgNum 0;
-   dct:identifier "LC2ad_47" .
+   dcterms:identifier "LC2ad_47" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629515-629515> a faldo:Region;
-   rdfs:label "chr1:629515-629515";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629515>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629515>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629515-629515 a faldo:Region;
+   rdfs:label "chromosome 1:629515-629515";
+   faldo:begin resource:1_629515;
+   faldo:end resource:1_629515;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629515-629515" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629515> a faldo:ExactPosition,
+resource:1_629515 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629515";
+   rdfs:label "chromosome 1:629515";
    faldo:position 629515;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629515" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_48 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_48 .
 
-bs:LC2ad_48 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629545";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629545-629545>;
+data:LC2ad_48 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629545";
+   faldo:location resource:1_629545-629545;
    kero:bin 2;
    kero:caNum 22;
    kero:cgNum 2;
-   dct:identifier "LC2ad_48" .
+   dcterms:identifier "LC2ad_48" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629545-629545> a faldo:Region;
-   rdfs:label "chr1:629545-629545";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629545>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629545>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629545-629545 a faldo:Region;
+   rdfs:label "chromosome 1:629545-629545";
+   faldo:begin resource:1_629545;
+   faldo:end resource:1_629545;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629545-629545" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629545> a faldo:ExactPosition,
+resource:1_629545 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629545";
+   rdfs:label "chromosome 1:629545";
    faldo:position 629545;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629545" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_49 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_49 .
 
-bs:LC2ad_49 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629596";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629596-629596>;
+data:LC2ad_49 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629596";
+   faldo:location resource:1_629596-629596;
    kero:bin 1;
    kero:caNum 18;
    kero:cgNum 4;
-   dct:identifier "LC2ad_49" .
+   dcterms:identifier "LC2ad_49" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629596-629596> a faldo:Region;
-   rdfs:label "chr1:629596-629596";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629596>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629596>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629596-629596 a faldo:Region;
+   rdfs:label "chromosome 1:629596-629596";
+   faldo:begin resource:1_629596;
+   faldo:end resource:1_629596;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629596-629596" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629596> a faldo:ExactPosition,
+resource:1_629596 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629596";
+   rdfs:label "chromosome 1:629596";
    faldo:position 629596;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629596" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_50 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_50 .
 
-bs:LC2ad_50 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629609";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629609-629609>;
+data:LC2ad_50 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629609";
+   faldo:location resource:1_629609-629609;
    kero:bin 1;
    kero:caNum 12;
    kero:cgNum 4;
-   dct:identifier "LC2ad_50" .
+   dcterms:identifier "LC2ad_50" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629609-629609> a faldo:Region;
-   rdfs:label "chr1:629609-629609";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629609>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629609>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629609-629609 a faldo:Region;
+   rdfs:label "chromosome 1:629609-629609";
+   faldo:begin resource:1_629609;
+   faldo:end resource:1_629609;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629609-629609" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629609> a faldo:ExactPosition,
+resource:1_629609 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629609";
+   rdfs:label "chromosome 1:629609";
    faldo:position 629609;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629609" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_51 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_51 .
 
-bs:LC2ad_51 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629633";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629633-629633>;
+data:LC2ad_51 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629633";
+   faldo:location resource:1_629633-629633;
    kero:bin 1;
    kero:caNum 29;
    kero:cgNum 8;
-   dct:identifier "LC2ad_51" .
+   dcterms:identifier "LC2ad_51" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629633-629633> a faldo:Region;
-   rdfs:label "chr1:629633-629633";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629633>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629633>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629633-629633 a faldo:Region;
+   rdfs:label "chromosome 1:629633-629633";
+   faldo:begin resource:1_629633;
+   faldo:end resource:1_629633;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629633-629633" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629633> a faldo:ExactPosition,
+resource:1_629633 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629633";
+   rdfs:label "chromosome 1:629633";
    faldo:position 629633;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629633" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_52 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_52 .
 
-bs:LC2ad_52 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629660";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629660-629660>;
+data:LC2ad_52 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629660";
+   faldo:location resource:1_629660-629660;
    kero:bin 2;
    kero:caNum 143;
    kero:cgNum 14;
-   dct:identifier "LC2ad_52" .
+   dcterms:identifier "LC2ad_52" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629660-629660> a faldo:Region;
-   rdfs:label "chr1:629660-629660";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629660>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629660>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629660-629660 a faldo:Region;
+   rdfs:label "chromosome 1:629660-629660";
+   faldo:begin resource:1_629660;
+   faldo:end resource:1_629660;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629660-629660" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629660> a faldo:ExactPosition,
+resource:1_629660 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629660";
+   rdfs:label "chromosome 1:629660";
    faldo:position 629660;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629660" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_53 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_53 .
 
-bs:LC2ad_53 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629701";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629701-629701>;
+data:LC2ad_53 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629701";
+   faldo:location resource:1_629701-629701;
    kero:bin 1;
    kero:caNum 289;
    kero:cgNum 19;
-   dct:identifier "LC2ad_53" .
+   dcterms:identifier "LC2ad_53" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629701-629701> a faldo:Region;
-   rdfs:label "chr1:629701-629701";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629701>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629701>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629701-629701 a faldo:Region;
+   rdfs:label "chromosome 1:629701-629701";
+   faldo:begin resource:1_629701;
+   faldo:end resource:1_629701;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629701-629701" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629701> a faldo:ExactPosition,
+resource:1_629701 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629701";
+   rdfs:label "chromosome 1:629701";
    faldo:position 629701;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629701" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_54 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_54 .
 
-bs:LC2ad_54 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629710";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629710-629710>;
+data:LC2ad_54 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629710";
+   faldo:location resource:1_629710-629710;
    kero:bin 2;
    kero:caNum 314;
    kero:cgNum 11;
-   dct:identifier "LC2ad_54" .
+   dcterms:identifier "LC2ad_54" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629710-629710> a faldo:Region;
-   rdfs:label "chr1:629710-629710";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629710>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629710>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629710-629710 a faldo:Region;
+   rdfs:label "chromosome 1:629710-629710";
+   faldo:begin resource:1_629710;
+   faldo:end resource:1_629710;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629710-629710" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629710> a faldo:ExactPosition,
+resource:1_629710 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629710";
+   rdfs:label "chromosome 1:629710";
    faldo:position 629710;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629710" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_55 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_55 .
 
-bs:LC2ad_55 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629790";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629790-629790>;
+data:LC2ad_55 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629790";
+   faldo:location resource:1_629790-629790;
    kero:bin 1;
    kero:caNum 263;
    kero:cgNum 18;
-   dct:identifier "LC2ad_55" .
+   dcterms:identifier "LC2ad_55" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629790-629790> a faldo:Region;
-   rdfs:label "chr1:629790-629790";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629790>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629790>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629790-629790 a faldo:Region;
+   rdfs:label "chromosome 1:629790-629790";
+   faldo:begin resource:1_629790;
+   faldo:end resource:1_629790;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629790-629790" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629790> a faldo:ExactPosition,
+resource:1_629790 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629790";
+   rdfs:label "chromosome 1:629790";
    faldo:position 629790;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629790" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_56 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_56 .
 
-bs:LC2ad_56 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629824";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629824-629824>;
+data:LC2ad_56 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629824";
+   faldo:location resource:1_629824-629824;
    kero:bin 2;
    kero:caNum 261;
    kero:cgNum 24;
-   dct:identifier "LC2ad_56" .
+   dcterms:identifier "LC2ad_56" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629824-629824> a faldo:Region;
-   rdfs:label "chr1:629824-629824";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629824>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629824>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629824-629824 a faldo:Region;
+   rdfs:label "chromosome 1:629824-629824";
+   faldo:begin resource:1_629824;
+   faldo:end resource:1_629824;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629824-629824" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629824> a faldo:ExactPosition,
+resource:1_629824 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629824";
+   rdfs:label "chromosome 1:629824";
    faldo:position 629824;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629824" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_57 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_57 .
 
-bs:LC2ad_57 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629834";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629834-629834>;
+data:LC2ad_57 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629834";
+   faldo:location resource:1_629834-629834;
    kero:bin 1;
    kero:caNum 224;
    kero:cgNum 27;
-   dct:identifier "LC2ad_57" .
+   dcterms:identifier "LC2ad_57" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629834-629834> a faldo:Region;
-   rdfs:label "chr1:629834-629834";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629834>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629834>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629834-629834 a faldo:Region;
+   rdfs:label "chromosome 1:629834-629834";
+   faldo:begin resource:1_629834;
+   faldo:end resource:1_629834;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629834-629834" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629834> a faldo:ExactPosition,
+resource:1_629834 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629834";
+   rdfs:label "chromosome 1:629834";
    faldo:position 629834;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629834" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_58 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_58 .
 
-bs:LC2ad_58 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:629882";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629882-629882>;
+data:LC2ad_58 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:629882";
+   faldo:location resource:1_629882-629882;
    kero:bin 1;
    kero:caNum 96;
    kero:cgNum 26;
-   dct:identifier "LC2ad_58" .
+   dcterms:identifier "LC2ad_58" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629882-629882> a faldo:Region;
-   rdfs:label "chr1:629882-629882";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629882>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629882>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_629882-629882 a faldo:Region;
+   rdfs:label "chromosome 1:629882-629882";
+   faldo:begin resource:1_629882;
+   faldo:end resource:1_629882;
+   faldo:reference resource:1;
+   dcterms:identifier "1_629882-629882" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:629882> a faldo:ExactPosition,
+resource:1_629882 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:629882";
+   rdfs:label "chromosome 1:629882";
    faldo:position 629882;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629882" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_59 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_59 .
 
-bs:LC2ad_59 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630017";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630017-630017>;
+data:LC2ad_59 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630017";
+   faldo:location resource:1_630017-630017;
    kero:bin 1;
    kero:caNum 5;
    kero:cgNum 27;
-   dct:identifier "LC2ad_59" .
+   dcterms:identifier "LC2ad_59" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630017-630017> a faldo:Region;
-   rdfs:label "chr1:630017-630017";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630017>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630017>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630017-630017 a faldo:Region;
+   rdfs:label "chromosome 1:630017-630017";
+   faldo:begin resource:1_630017;
+   faldo:end resource:1_630017;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630017-630017" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630017> a faldo:ExactPosition,
+resource:1_630017 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630017";
+   rdfs:label "chromosome 1:630017";
    faldo:position 630017;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630017" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_60 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_60 .
 
-bs:LC2ad_60 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630089";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630089-630089>;
+data:LC2ad_60 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630089";
+   faldo:location resource:1_630089-630089;
    kero:bin 2;
    kero:caNum 13;
    kero:cgNum 36;
-   dct:identifier "LC2ad_60" .
+   dcterms:identifier "LC2ad_60" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630089-630089> a faldo:Region;
-   rdfs:label "chr1:630089-630089";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630089>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630089>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630089-630089 a faldo:Region;
+   rdfs:label "chromosome 1:630089-630089";
+   faldo:begin resource:1_630089;
+   faldo:end resource:1_630089;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630089-630089" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630089> a faldo:ExactPosition,
+resource:1_630089 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630089";
+   rdfs:label "chromosome 1:630089";
    faldo:position 630089;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630089" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_61 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_61 .
 
-bs:LC2ad_61 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630165";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630165-630165>;
+data:LC2ad_61 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630165";
+   faldo:location resource:1_630165-630165;
    kero:bin 2;
    kero:caNum 7;
    kero:cgNum 31;
-   dct:identifier "LC2ad_61" .
+   dcterms:identifier "LC2ad_61" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630165-630165> a faldo:Region;
-   rdfs:label "chr1:630165-630165";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630165>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630165>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630165-630165 a faldo:Region;
+   rdfs:label "chromosome 1:630165-630165";
+   faldo:begin resource:1_630165;
+   faldo:end resource:1_630165;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630165-630165" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630165> a faldo:ExactPosition,
+resource:1_630165 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630165";
+   rdfs:label "chromosome 1:630165";
    faldo:position 630165;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630165" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_62 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_62 .
 
-bs:LC2ad_62 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630223";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630223-630223>;
+data:LC2ad_62 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630223";
+   faldo:location resource:1_630223-630223;
    kero:bin 1;
    kero:caNum 40;
    kero:cgNum 27;
-   dct:identifier "LC2ad_62" .
+   dcterms:identifier "LC2ad_62" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630223-630223> a faldo:Region;
-   rdfs:label "chr1:630223-630223";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630223>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630223>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630223-630223 a faldo:Region;
+   rdfs:label "chromosome 1:630223-630223";
+   faldo:begin resource:1_630223;
+   faldo:end resource:1_630223;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630223-630223" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630223> a faldo:ExactPosition,
+resource:1_630223 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630223";
+   rdfs:label "chromosome 1:630223";
    faldo:position 630223;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630223" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_63 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_63 .
 
-bs:LC2ad_63 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630281";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630281-630281>;
+data:LC2ad_63 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630281";
+   faldo:location resource:1_630281-630281;
    kero:bin 2;
    kero:caNum 449;
    kero:cgNum 26;
-   dct:identifier "LC2ad_63" .
+   dcterms:identifier "LC2ad_63" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630281-630281> a faldo:Region;
-   rdfs:label "chr1:630281-630281";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630281>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630281>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630281-630281 a faldo:Region;
+   rdfs:label "chromosome 1:630281-630281";
+   faldo:begin resource:1_630281;
+   faldo:end resource:1_630281;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630281-630281" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630281> a faldo:ExactPosition,
+resource:1_630281 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630281";
+   rdfs:label "chromosome 1:630281";
    faldo:position 630281;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630281" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_64 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_64 .
 
-bs:LC2ad_64 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630333";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630333-630333>;
+data:LC2ad_64 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630333";
+   faldo:location resource:1_630333-630333;
    kero:bin 8;
    kero:caNum 675;
    kero:cgNum 26;
-   dct:identifier "LC2ad_64" .
+   dcterms:identifier "LC2ad_64" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630333-630333> a faldo:Region;
-   rdfs:label "chr1:630333-630333";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630333>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630333>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630333-630333 a faldo:Region;
+   rdfs:label "chromosome 1:630333-630333";
+   faldo:begin resource:1_630333;
+   faldo:end resource:1_630333;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630333-630333" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630333> a faldo:ExactPosition,
+resource:1_630333 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630333";
+   rdfs:label "chromosome 1:630333";
    faldo:position 630333;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630333" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_65 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_65 .
 
-bs:LC2ad_65 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630406";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630406-630406>;
+data:LC2ad_65 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630406";
+   faldo:location resource:1_630406-630406;
    kero:bin 2;
    kero:caNum 589;
    kero:cgNum 27;
-   dct:identifier "LC2ad_65" .
+   dcterms:identifier "LC2ad_65" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630406-630406> a faldo:Region;
-   rdfs:label "chr1:630406-630406";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630406>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630406>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630406-630406 a faldo:Region;
+   rdfs:label "chromosome 1:630406-630406";
+   faldo:begin resource:1_630406;
+   faldo:end resource:1_630406;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630406-630406" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630406> a faldo:ExactPosition,
+resource:1_630406 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630406";
+   rdfs:label "chromosome 1:630406";
    faldo:position 630406;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630406" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_66 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_66 .
 
-bs:LC2ad_66 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630413";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630413-630413>;
+data:LC2ad_66 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630413";
+   faldo:location resource:1_630413-630413;
    kero:bin 1;
    kero:caNum 559;
    kero:cgNum 24;
-   dct:identifier "LC2ad_66" .
+   dcterms:identifier "LC2ad_66" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630413-630413> a faldo:Region;
-   rdfs:label "chr1:630413-630413";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630413>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630413>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630413-630413 a faldo:Region;
+   rdfs:label "chromosome 1:630413-630413";
+   faldo:begin resource:1_630413;
+   faldo:end resource:1_630413;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630413-630413" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630413> a faldo:ExactPosition,
+resource:1_630413 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630413";
+   rdfs:label "chromosome 1:630413";
    faldo:position 630413;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630413" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_67 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_67 .
 
-bs:LC2ad_67 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630440";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630440-630440>;
+data:LC2ad_67 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630440";
+   faldo:location resource:1_630440-630440;
    kero:bin 1;
    kero:caNum 347;
    kero:cgNum 20;
-   dct:identifier "LC2ad_67" .
+   dcterms:identifier "LC2ad_67" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630440-630440> a faldo:Region;
-   rdfs:label "chr1:630440-630440";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630440>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630440>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630440-630440 a faldo:Region;
+   rdfs:label "chromosome 1:630440-630440";
+   faldo:begin resource:1_630440;
+   faldo:end resource:1_630440;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630440-630440" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630440> a faldo:ExactPosition,
+resource:1_630440 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630440";
+   rdfs:label "chromosome 1:630440";
    faldo:position 630440;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630440" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_68 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_68 .
 
-bs:LC2ad_68 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630522";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630522-630522>;
+data:LC2ad_68 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630522";
+   faldo:location resource:1_630522-630522;
    kero:bin 2;
    kero:caNum 5;
    kero:cgNum 21;
-   dct:identifier "LC2ad_68" .
+   dcterms:identifier "LC2ad_68" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630522-630522> a faldo:Region;
-   rdfs:label "chr1:630522-630522";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630522>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630522>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630522-630522 a faldo:Region;
+   rdfs:label "chromosome 1:630522-630522";
+   faldo:begin resource:1_630522;
+   faldo:end resource:1_630522;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630522-630522" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630522> a faldo:ExactPosition,
+resource:1_630522 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630522";
+   rdfs:label "chromosome 1:630522";
    faldo:position 630522;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630522" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_69 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_69 .
 
-bs:LC2ad_69 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630569";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630569-630569>;
+data:LC2ad_69 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630569";
+   faldo:location resource:1_630569-630569;
    kero:bin 1;
    kero:caNum 7;
    kero:cgNum 6;
-   dct:identifier "LC2ad_69" .
+   dcterms:identifier "LC2ad_69" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630569-630569> a faldo:Region;
-   rdfs:label "chr1:630569-630569";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630569>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630569>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630569-630569 a faldo:Region;
+   rdfs:label "chromosome 1:630569-630569";
+   faldo:begin resource:1_630569;
+   faldo:end resource:1_630569;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630569-630569" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630569> a faldo:ExactPosition,
+resource:1_630569 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630569";
+   rdfs:label "chromosome 1:630569";
    faldo:position 630569;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630569" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_70 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_70 .
 
-bs:LC2ad_70 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630629";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630629-630629>;
+data:LC2ad_70 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630629";
+   faldo:location resource:1_630629-630629;
    kero:bin 2;
    kero:caNum 13;
    kero:cgNum 12;
-   dct:identifier "LC2ad_70" .
+   dcterms:identifier "LC2ad_70" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630629-630629> a faldo:Region;
-   rdfs:label "chr1:630629-630629";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630629>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630629>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630629-630629 a faldo:Region;
+   rdfs:label "chromosome 1:630629-630629";
+   faldo:begin resource:1_630629;
+   faldo:end resource:1_630629;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630629-630629" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630629> a faldo:ExactPosition,
+resource:1_630629 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630629";
+   rdfs:label "chromosome 1:630629";
    faldo:position 630629;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630629" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_71 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_71 .
 
-bs:LC2ad_71 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630792";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630792-630792>;
+data:LC2ad_71 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630792";
+   faldo:location resource:1_630792-630792;
    kero:bin 2;
    kero:caNum 12;
    kero:cgNum 0;
-   dct:identifier "LC2ad_71" .
+   dcterms:identifier "LC2ad_71" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630792-630792> a faldo:Region;
-   rdfs:label "chr1:630792-630792";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630792>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630792>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630792-630792 a faldo:Region;
+   rdfs:label "chromosome 1:630792-630792";
+   faldo:begin resource:1_630792;
+   faldo:end resource:1_630792;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630792-630792" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630792> a faldo:ExactPosition,
+resource:1_630792 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630792";
+   rdfs:label "chromosome 1:630792";
    faldo:position 630792;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630792" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_72 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_72 .
 
-bs:LC2ad_72 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630907";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630907-630907>;
+data:LC2ad_72 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630907";
+   faldo:location resource:1_630907-630907;
    kero:bin 2;
    kero:caNum 27;
    kero:cgNum 1;
-   dct:identifier "LC2ad_72" .
+   dcterms:identifier "LC2ad_72" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630907-630907> a faldo:Region;
-   rdfs:label "chr1:630907-630907";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630907>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630907>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630907-630907 a faldo:Region;
+   rdfs:label "chromosome 1:630907-630907";
+   faldo:begin resource:1_630907;
+   faldo:end resource:1_630907;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630907-630907" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630907> a faldo:ExactPosition,
+resource:1_630907 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630907";
+   rdfs:label "chromosome 1:630907";
    faldo:position 630907;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630907" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_73 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_73 .
 
-bs:LC2ad_73 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630910";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630910-630910>;
+data:LC2ad_73 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630910";
+   faldo:location resource:1_630910-630910;
    kero:bin 1;
    kero:caNum 24;
    kero:cgNum 2;
-   dct:identifier "LC2ad_73" .
+   dcterms:identifier "LC2ad_73" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630910-630910> a faldo:Region;
-   rdfs:label "chr1:630910-630910";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630910>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630910>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630910-630910 a faldo:Region;
+   rdfs:label "chromosome 1:630910-630910";
+   faldo:begin resource:1_630910;
+   faldo:end resource:1_630910;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630910-630910" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630910> a faldo:ExactPosition,
+resource:1_630910 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630910";
+   rdfs:label "chromosome 1:630910";
    faldo:position 630910;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630910" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_74 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_74 .
 
-bs:LC2ad_74 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630913";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630913-630913>;
+data:LC2ad_74 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630913";
+   faldo:location resource:1_630913-630913;
    kero:bin 1;
    kero:caNum 20;
    kero:cgNum 2;
-   dct:identifier "LC2ad_74" .
+   dcterms:identifier "LC2ad_74" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630913-630913> a faldo:Region;
-   rdfs:label "chr1:630913-630913";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630913>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630913>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630913-630913 a faldo:Region;
+   rdfs:label "chromosome 1:630913-630913";
+   faldo:begin resource:1_630913;
+   faldo:end resource:1_630913;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630913-630913" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630913> a faldo:ExactPosition,
+resource:1_630913 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630913";
+   rdfs:label "chromosome 1:630913";
    faldo:position 630913;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630913" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_75 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_75 .
 
-bs:LC2ad_75 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630925";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630925-630925>;
+data:LC2ad_75 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630925";
+   faldo:location resource:1_630925-630925;
    kero:bin 1;
    kero:caNum 18;
    kero:cgNum 2;
-   dct:identifier "LC2ad_75" .
+   dcterms:identifier "LC2ad_75" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630925-630925> a faldo:Region;
-   rdfs:label "chr1:630925-630925";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630925>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630925>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630925-630925 a faldo:Region;
+   rdfs:label "chromosome 1:630925-630925";
+   faldo:begin resource:1_630925;
+   faldo:end resource:1_630925;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630925-630925" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630925> a faldo:ExactPosition,
+resource:1_630925 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630925";
+   rdfs:label "chromosome 1:630925";
    faldo:position 630925;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630925" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_76 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_76 .
 
-bs:LC2ad_76 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630937";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630937-630937>;
+data:LC2ad_76 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630937";
+   faldo:location resource:1_630937-630937;
    kero:bin 1;
    kero:caNum 18;
    kero:cgNum 1;
-   dct:identifier "LC2ad_76" .
+   dcterms:identifier "LC2ad_76" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630937-630937> a faldo:Region;
-   rdfs:label "chr1:630937-630937";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630937>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630937>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630937-630937 a faldo:Region;
+   rdfs:label "chromosome 1:630937-630937";
+   faldo:begin resource:1_630937;
+   faldo:end resource:1_630937;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630937-630937" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630937> a faldo:ExactPosition,
+resource:1_630937 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630937";
+   rdfs:label "chromosome 1:630937";
    faldo:position 630937;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630937" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_77 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_77 .
 
-bs:LC2ad_77 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:630960";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630960-630960>;
+data:LC2ad_77 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:630960";
+   faldo:location resource:1_630960-630960;
    kero:bin 1;
    kero:caNum 12;
    kero:cgNum 0;
-   dct:identifier "LC2ad_77" .
+   dcterms:identifier "LC2ad_77" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630960-630960> a faldo:Region;
-   rdfs:label "chr1:630960-630960";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630960>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630960>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_630960-630960 a faldo:Region;
+   rdfs:label "chromosome 1:630960-630960";
+   faldo:begin resource:1_630960;
+   faldo:end resource:1_630960;
+   faldo:reference resource:1;
+   dcterms:identifier "1_630960-630960" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:630960> a faldo:ExactPosition,
+resource:1_630960 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:630960";
+   rdfs:label "chromosome 1:630960";
    faldo:position 630960;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630960" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_78 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_78 .
 
-bs:LC2ad_78 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631079";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631079-631079>;
+data:LC2ad_78 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631079";
+   faldo:location resource:1_631079-631079;
    kero:bin 1;
    kero:caNum 159;
    kero:cgNum 8;
-   dct:identifier "LC2ad_78" .
+   dcterms:identifier "LC2ad_78" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631079-631079> a faldo:Region;
-   rdfs:label "chr1:631079-631079";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631079>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631079>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631079-631079 a faldo:Region;
+   rdfs:label "chromosome 1:631079-631079";
+   faldo:begin resource:1_631079;
+   faldo:end resource:1_631079;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631079-631079" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631079> a faldo:ExactPosition,
+resource:1_631079 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631079";
+   rdfs:label "chromosome 1:631079";
    faldo:position 631079;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631079" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_79 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_79 .
 
-bs:LC2ad_79 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631082";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631082-631082>;
+data:LC2ad_79 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631082";
+   faldo:location resource:1_631082-631082;
    kero:bin 1;
    kero:caNum 177;
    kero:cgNum 8;
-   dct:identifier "LC2ad_79" .
+   dcterms:identifier "LC2ad_79" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631082-631082> a faldo:Region;
-   rdfs:label "chr1:631082-631082";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631082>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631082>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631082-631082 a faldo:Region;
+   rdfs:label "chromosome 1:631082-631082";
+   faldo:begin resource:1_631082;
+   faldo:end resource:1_631082;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631082-631082" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631082> a faldo:ExactPosition,
+resource:1_631082 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631082";
+   rdfs:label "chromosome 1:631082";
    faldo:position 631082;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631082" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_80 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_80 .
 
-bs:LC2ad_80 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631086";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631086-631086>;
+data:LC2ad_80 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631086";
+   faldo:location resource:1_631086-631086;
    kero:bin 2;
    kero:caNum 212;
    kero:cgNum 7;
-   dct:identifier "LC2ad_80" .
+   dcterms:identifier "LC2ad_80" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631086-631086> a faldo:Region;
-   rdfs:label "chr1:631086-631086";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631086>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631086>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631086-631086 a faldo:Region;
+   rdfs:label "chromosome 1:631086-631086";
+   faldo:begin resource:1_631086;
+   faldo:end resource:1_631086;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631086-631086" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631086> a faldo:ExactPosition,
+resource:1_631086 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631086";
+   rdfs:label "chromosome 1:631086";
    faldo:position 631086;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631086" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_81 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_81 .
 
-bs:LC2ad_81 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631139";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631139-631139>;
+data:LC2ad_81 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631139";
+   faldo:location resource:1_631139-631139;
    kero:bin 3;
    kero:caNum 322;
    kero:cgNum 10;
-   dct:identifier "LC2ad_81" .
+   dcterms:identifier "LC2ad_81" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631139-631139> a faldo:Region;
-   rdfs:label "chr1:631139-631139";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631139>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631139>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631139-631139 a faldo:Region;
+   rdfs:label "chromosome 1:631139-631139";
+   faldo:begin resource:1_631139;
+   faldo:end resource:1_631139;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631139-631139" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631139> a faldo:ExactPosition,
+resource:1_631139 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631139";
+   rdfs:label "chromosome 1:631139";
    faldo:position 631139;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631139" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_82 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_82 .
 
-bs:LC2ad_82 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631142";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631142-631142>;
+data:LC2ad_82 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631142";
+   faldo:location resource:1_631142-631142;
    kero:bin 1;
    kero:caNum 320;
    kero:cgNum 8;
-   dct:identifier "LC2ad_82" .
+   dcterms:identifier "LC2ad_82" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631142-631142> a faldo:Region;
-   rdfs:label "chr1:631142-631142";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631142>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631142>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631142-631142 a faldo:Region;
+   rdfs:label "chromosome 1:631142-631142";
+   faldo:begin resource:1_631142;
+   faldo:end resource:1_631142;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631142-631142" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631142> a faldo:ExactPosition,
+resource:1_631142 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631142";
+   rdfs:label "chromosome 1:631142";
    faldo:position 631142;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631142" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_83 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_83 .
 
-bs:LC2ad_83 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631185";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631185-631185>;
+data:LC2ad_83 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631185";
+   faldo:location resource:1_631185-631185;
    kero:bin 1;
    kero:caNum 300;
    kero:cgNum 7;
-   dct:identifier "LC2ad_83" .
+   dcterms:identifier "LC2ad_83" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631185-631185> a faldo:Region;
-   rdfs:label "chr1:631185-631185";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631185>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631185>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631185-631185 a faldo:Region;
+   rdfs:label "chromosome 1:631185-631185";
+   faldo:begin resource:1_631185;
+   faldo:end resource:1_631185;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631185-631185" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631185> a faldo:ExactPosition,
+resource:1_631185 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631185";
+   rdfs:label "chromosome 1:631185";
    faldo:position 631185;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631185" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_84 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_84 .
 
-bs:LC2ad_84 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631190";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631190-631190>;
+data:LC2ad_84 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631190";
+   faldo:location resource:1_631190-631190;
    kero:bin 1;
    kero:caNum 274;
    kero:cgNum 12;
-   dct:identifier "LC2ad_84" .
+   dcterms:identifier "LC2ad_84" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631190-631190> a faldo:Region;
-   rdfs:label "chr1:631190-631190";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631190>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631190>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631190-631190 a faldo:Region;
+   rdfs:label "chromosome 1:631190-631190";
+   faldo:begin resource:1_631190;
+   faldo:end resource:1_631190;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631190-631190" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631190> a faldo:ExactPosition,
+resource:1_631190 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631190";
+   rdfs:label "chromosome 1:631190";
    faldo:position 631190;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631190" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_85 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_85 .
 
-bs:LC2ad_85 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631223";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631223-631223>;
+data:LC2ad_85 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631223";
+   faldo:location resource:1_631223-631223;
    kero:bin 2;
    kero:caNum 208;
    kero:cgNum 10;
-   dct:identifier "LC2ad_85" .
+   dcterms:identifier "LC2ad_85" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631223-631223> a faldo:Region;
-   rdfs:label "chr1:631223-631223";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631223>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631223>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631223-631223 a faldo:Region;
+   rdfs:label "chromosome 1:631223-631223";
+   faldo:begin resource:1_631223;
+   faldo:end resource:1_631223;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631223-631223" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631223> a faldo:ExactPosition,
+resource:1_631223 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631223";
+   rdfs:label "chromosome 1:631223";
    faldo:position 631223;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631223" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_86 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_86 .
 
-bs:LC2ad_86 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631238";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631238-631238>;
+data:LC2ad_86 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631238";
+   faldo:location resource:1_631238-631238;
    kero:bin 1;
    kero:caNum 172;
    kero:cgNum 6;
-   dct:identifier "LC2ad_86" .
+   dcterms:identifier "LC2ad_86" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631238-631238> a faldo:Region;
-   rdfs:label "chr1:631238-631238";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631238>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631238>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631238-631238 a faldo:Region;
+   rdfs:label "chromosome 1:631238-631238";
+   faldo:begin resource:1_631238;
+   faldo:end resource:1_631238;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631238-631238" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631238> a faldo:ExactPosition,
+resource:1_631238 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631238";
+   rdfs:label "chromosome 1:631238";
    faldo:position 631238;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631238" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_87 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_87 .
 
-bs:LC2ad_87 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631244";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631244-631244>;
+data:LC2ad_87 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631244";
+   faldo:location resource:1_631244-631244;
    kero:bin 1;
    kero:caNum 143;
    kero:cgNum 8;
-   dct:identifier "LC2ad_87" .
+   dcterms:identifier "LC2ad_87" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631244-631244> a faldo:Region;
-   rdfs:label "chr1:631244-631244";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631244>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631244>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631244-631244 a faldo:Region;
+   rdfs:label "chromosome 1:631244-631244";
+   faldo:begin resource:1_631244;
+   faldo:end resource:1_631244;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631244-631244" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631244> a faldo:ExactPosition,
+resource:1_631244 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631244";
+   rdfs:label "chromosome 1:631244";
    faldo:position 631244;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631244" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_88 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_88 .
 
-bs:LC2ad_88 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631298";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631298-631298>;
+data:LC2ad_88 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631298";
+   faldo:location resource:1_631298-631298;
    kero:bin 1;
    kero:caNum 77;
    kero:cgNum 2;
-   dct:identifier "LC2ad_88" .
+   dcterms:identifier "LC2ad_88" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631298-631298> a faldo:Region;
-   rdfs:label "chr1:631298-631298";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631298>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631298>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631298-631298 a faldo:Region;
+   rdfs:label "chromosome 1:631298-631298";
+   faldo:begin resource:1_631298;
+   faldo:end resource:1_631298;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631298-631298" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631298> a faldo:ExactPosition,
+resource:1_631298 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631298";
+   rdfs:label "chromosome 1:631298";
    faldo:position 631298;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631298" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_89 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_89 .
 
-bs:LC2ad_89 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631334";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631334-631334>;
+data:LC2ad_89 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631334";
+   faldo:location resource:1_631334-631334;
    kero:bin 2;
    kero:caNum 48;
    kero:cgNum 0;
-   dct:identifier "LC2ad_89" .
+   dcterms:identifier "LC2ad_89" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631334-631334> a faldo:Region;
-   rdfs:label "chr1:631334-631334";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631334>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631334>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631334-631334 a faldo:Region;
+   rdfs:label "chromosome 1:631334-631334";
+   faldo:begin resource:1_631334;
+   faldo:end resource:1_631334;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631334-631334" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631334> a faldo:ExactPosition,
+resource:1_631334 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631334";
+   rdfs:label "chromosome 1:631334";
    faldo:position 631334;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631334" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_90 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_90 .
 
-bs:LC2ad_90 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631343";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631343-631343>;
+data:LC2ad_90 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631343";
+   faldo:location resource:1_631343-631343;
    kero:bin 1;
    kero:caNum 40;
    kero:cgNum 2;
-   dct:identifier "LC2ad_90" .
+   dcterms:identifier "LC2ad_90" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631343-631343> a faldo:Region;
-   rdfs:label "chr1:631343-631343";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631343>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631343>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631343-631343 a faldo:Region;
+   rdfs:label "chromosome 1:631343-631343";
+   faldo:begin resource:1_631343;
+   faldo:end resource:1_631343;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631343-631343" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631343> a faldo:ExactPosition,
+resource:1_631343 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631343";
+   rdfs:label "chromosome 1:631343";
    faldo:position 631343;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631343" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_91 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_91 .
 
-bs:LC2ad_91 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631351";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631351-631351>;
+data:LC2ad_91 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631351";
+   faldo:location resource:1_631351-631351;
    kero:bin 1;
    kero:caNum 35;
    kero:cgNum 0;
-   dct:identifier "LC2ad_91" .
+   dcterms:identifier "LC2ad_91" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631351-631351> a faldo:Region;
-   rdfs:label "chr1:631351-631351";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631351>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631351>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631351-631351 a faldo:Region;
+   rdfs:label "chromosome 1:631351-631351";
+   faldo:begin resource:1_631351;
+   faldo:end resource:1_631351;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631351-631351" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631351> a faldo:ExactPosition,
+resource:1_631351 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631351";
+   rdfs:label "chromosome 1:631351";
    faldo:position 631351;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631351" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_92 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_92 .
 
-bs:LC2ad_92 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631359";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631359-631359>;
+data:LC2ad_92 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631359";
+   faldo:location resource:1_631359-631359;
    kero:bin 1;
    kero:caNum 30;
    kero:cgNum 0;
-   dct:identifier "LC2ad_92" .
+   dcterms:identifier "LC2ad_92" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631359-631359> a faldo:Region;
-   rdfs:label "chr1:631359-631359";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631359>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631359>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631359-631359 a faldo:Region;
+   rdfs:label "chromosome 1:631359-631359";
+   faldo:begin resource:1_631359;
+   faldo:end resource:1_631359;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631359-631359" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631359> a faldo:ExactPosition,
+resource:1_631359 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631359";
+   rdfs:label "chromosome 1:631359";
    faldo:position 631359;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631359" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_93 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_93 .
 
-bs:LC2ad_93 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631682";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631682-631682>;
+data:LC2ad_93 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631682";
+   faldo:location resource:1_631682-631682;
    kero:bin 2;
    kero:caNum 2;
    kero:cgNum 6;
-   dct:identifier "LC2ad_93" .
+   dcterms:identifier "LC2ad_93" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631682-631682> a faldo:Region;
-   rdfs:label "chr1:631682-631682";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631682>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631682>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631682-631682 a faldo:Region;
+   rdfs:label "chromosome 1:631682-631682";
+   faldo:begin resource:1_631682;
+   faldo:end resource:1_631682;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631682-631682" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631682> a faldo:ExactPosition,
+resource:1_631682 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631682";
+   rdfs:label "chromosome 1:631682";
    faldo:position 631682;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631682" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_94 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_94 .
 
-bs:LC2ad_94 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631710";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631710-631710>;
+data:LC2ad_94 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631710";
+   faldo:location resource:1_631710-631710;
    kero:bin 2;
    kero:caNum 0;
    kero:cgNum 8;
-   dct:identifier "LC2ad_94" .
+   dcterms:identifier "LC2ad_94" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631710-631710> a faldo:Region;
-   rdfs:label "chr1:631710-631710";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631710>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631710>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631710-631710 a faldo:Region;
+   rdfs:label "chromosome 1:631710-631710";
+   faldo:begin resource:1_631710;
+   faldo:end resource:1_631710;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631710-631710" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631710> a faldo:ExactPosition,
+resource:1_631710 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631710";
+   rdfs:label "chromosome 1:631710";
    faldo:position 631710;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631710" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_95 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_95 .
 
-bs:LC2ad_95 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631733";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631733-631733>;
+data:LC2ad_95 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631733";
+   faldo:location resource:1_631733-631733;
    kero:bin 1;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_95" .
+   dcterms:identifier "LC2ad_95" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631733-631733> a faldo:Region;
-   rdfs:label "chr1:631733-631733";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631733>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631733>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631733-631733 a faldo:Region;
+   rdfs:label "chromosome 1:631733-631733";
+   faldo:begin resource:1_631733;
+   faldo:end resource:1_631733;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631733-631733" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631733> a faldo:ExactPosition,
+resource:1_631733 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631733";
+   rdfs:label "chromosome 1:631733";
    faldo:position 631733;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631733" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_96 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_96 .
 
-bs:LC2ad_96 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631742";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631742-631742>;
+data:LC2ad_96 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631742";
+   faldo:location resource:1_631742-631742;
    kero:bin 1;
    kero:caNum 0;
    kero:cgNum 6;
-   dct:identifier "LC2ad_96" .
+   dcterms:identifier "LC2ad_96" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631742-631742> a faldo:Region;
-   rdfs:label "chr1:631742-631742";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631742>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631742>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631742-631742 a faldo:Region;
+   rdfs:label "chromosome 1:631742-631742";
+   faldo:begin resource:1_631742;
+   faldo:end resource:1_631742;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631742-631742" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631742> a faldo:ExactPosition,
+resource:1_631742 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631742";
+   rdfs:label "chromosome 1:631742";
    faldo:position 631742;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631742" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_97 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_97 .
 
-bs:LC2ad_97 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631859";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631859-631859>;
+data:LC2ad_97 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631859";
+   faldo:location resource:1_631859-631859;
    kero:bin 2;
    kero:caNum 5;
    kero:cgNum 0;
-   dct:identifier "LC2ad_97" .
+   dcterms:identifier "LC2ad_97" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631859-631859> a faldo:Region;
-   rdfs:label "chr1:631859-631859";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631859>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631859>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631859-631859 a faldo:Region;
+   rdfs:label "chromosome 1:631859-631859";
+   faldo:begin resource:1_631859;
+   faldo:end resource:1_631859;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631859-631859" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631859> a faldo:ExactPosition,
+resource:1_631859 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631859";
+   rdfs:label "chromosome 1:631859";
    faldo:position 631859;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631859" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_98 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_98 .
 
-bs:LC2ad_98 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631932";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631932-631932>;
+data:LC2ad_98 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631932";
+   faldo:location resource:1_631932-631932;
    kero:bin 1;
    kero:caNum 75;
    kero:cgNum 0;
-   dct:identifier "LC2ad_98" .
+   dcterms:identifier "LC2ad_98" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631932-631932> a faldo:Region;
-   rdfs:label "chr1:631932-631932";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631932>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631932>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631932-631932 a faldo:Region;
+   rdfs:label "chromosome 1:631932-631932";
+   faldo:begin resource:1_631932;
+   faldo:end resource:1_631932;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631932-631932" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631932> a faldo:ExactPosition,
+resource:1_631932 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631932";
+   rdfs:label "chromosome 1:631932";
    faldo:position 631932;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631932" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_99 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_99 .
 
-bs:LC2ad_99 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631968";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631968-631968>;
+data:LC2ad_99 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631968";
+   faldo:location resource:1_631968-631968;
    kero:bin 1;
    kero:caNum 109;
    kero:cgNum 0;
-   dct:identifier "LC2ad_99" .
+   dcterms:identifier "LC2ad_99" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631968-631968> a faldo:Region;
-   rdfs:label "chr1:631968-631968";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631968>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631968>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631968-631968 a faldo:Region;
+   rdfs:label "chromosome 1:631968-631968";
+   faldo:begin resource:1_631968;
+   faldo:end resource:1_631968;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631968-631968" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631968> a faldo:ExactPosition,
+resource:1_631968 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631968";
+   rdfs:label "chromosome 1:631968";
    faldo:position 631968;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631968" .
 
-file:bs_data_9606_LC2ad_reduced.tab.gz kero:hasMethylationSite bs:LC2ad_100 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_100 .
 
-bs:LC2ad_100 a so:SO0000306;
-   rdfs:label "Methylation site on chr1:631978";
-   faldo:location <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631978-631978>;
+data:LC2ad_100 a obo:SO_0000306;
+   rdfs:label "Methylation site on chromosome 1:631978";
+   faldo:location resource:1_631978-631978;
    kero:bin 1;
    kero:caNum 133;
    kero:cgNum 1;
-   dct:identifier "LC2ad_100" .
+   dcterms:identifier "LC2ad_100" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631978-631978> a faldo:Region;
-   rdfs:label "chr1:631978-631978";
-   faldo:begin <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631978>;
-   faldo:end <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631978>;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+resource:1_631978-631978 a faldo:Region;
+   rdfs:label "chromosome 1:631978-631978";
+   faldo:begin resource:1_631978;
+   faldo:end resource:1_631978;
+   faldo:reference resource:1;
+   dcterms:identifier "1_631978-631978" .
 
-<http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1:631978> a faldo:ExactPosition,
+resource:1_631978 a faldo:ExactPosition,
      faldo:StrandedPosition;
-   rdfs:label "chr1:631978";
+   rdfs:label "chromosome 1:631978";
    faldo:position 631978;
-   faldo:reference <http://kero.hgc.jp/rdf/resource/kero/9/homo_sapiens/hg38/1> .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631978" .
