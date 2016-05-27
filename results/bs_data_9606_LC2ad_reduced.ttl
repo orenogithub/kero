@@ -1,19 +1,29 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix faldo: <http://biohackathon.org/resource/faldo#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix faldo: <http://biohackathon.org/resource/faldo#> .
 @prefix kero: <http://kero.hgc.jp/ontology/kero.owl#> .
-@prefix kerobs: <http://kero.hgc.jp/data/kero/9/BSseq/> .
-@prefix chr: <http://kero.hgc.jp/resource/homo_sapiens/hg38/> .
+@prefix data: <http://kero.hgc.jp/data/kero/9/BSseq/> .
+@prefix resource: <http://kero.hgc.jp/resource/homo_sapiens/hg38/> .
 @prefix dataset: <http://kero.hgc.jp/dataset/kero/9/BSseq/> .
 
 dataset:LC2ad a kero:MethylSeqDataset;
-   rdfs:label "kero BS-seq dataset of LC2ad" .
+   rdfs:label "kero BS-seq dataset of LC2ad";
+   dcterms:contributor "Shin Kawano";
+   dcterms:created "2016-05-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+   dcterms:description "kero BS-seq dataset of LC2ad";
+   dcterms:identifier "LC2ad";
+   dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/>;
+   dcterms:publisher <http://dbcls.rois.ac.jp/>;
+   pav:version "2016-05-27"^^<http://www.w3.org/2001/XMLSchema#date>;
+   foaf:page <http://kero.hgc.jp> .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_1 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_1 .
 
-kerobs:LC2ad_1 a obo:SO0000306;
+data:LC2ad_1 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:11210";
    faldo:location resource:1_11210-11210;
    kero:bin 1;
@@ -25,17 +35,19 @@ resource:1_11210-11210 a faldo:Region;
    rdfs:label "chromosome 1:11210-11210";
    faldo:begin resource:1_11210;
    faldo:end resource:1_11210;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11210-11210" .
 
 resource:1_11210 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:11210";
    faldo:position 11210;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11210" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_2 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_2 .
 
-kerobs:LC2ad_2 a obo:SO0000306;
+data:LC2ad_2 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:11226";
    faldo:location resource:1_11226-11226;
    kero:bin 1;
@@ -47,17 +59,19 @@ resource:1_11226-11226 a faldo:Region;
    rdfs:label "chromosome 1:11226-11226";
    faldo:begin resource:1_11226;
    faldo:end resource:1_11226;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11226-11226" .
 
 resource:1_11226 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:11226";
    faldo:position 11226;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11226" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_3 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_3 .
 
-kerobs:LC2ad_3 a obo:SO0000306;
+data:LC2ad_3 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:11239";
    faldo:location resource:1_11239-11239;
    kero:bin 1;
@@ -69,17 +83,19 @@ resource:1_11239-11239 a faldo:Region;
    rdfs:label "chromosome 1:11239-11239";
    faldo:begin resource:1_11239;
    faldo:end resource:1_11239;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11239-11239" .
 
 resource:1_11239 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:11239";
    faldo:position 11239;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11239" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_4 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_4 .
 
-kerobs:LC2ad_4 a obo:SO0000306;
+data:LC2ad_4 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:11284";
    faldo:location resource:1_11284-11284;
    kero:bin 1;
@@ -91,17 +107,19 @@ resource:1_11284-11284 a faldo:Region;
    rdfs:label "chromosome 1:11284-11284";
    faldo:begin resource:1_11284;
    faldo:end resource:1_11284;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11284-11284" .
 
 resource:1_11284 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:11284";
    faldo:position 11284;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11284" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_5 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_5 .
 
-kerobs:LC2ad_5 a obo:SO0000306;
+data:LC2ad_5 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:11297";
    faldo:location resource:1_11297-11297;
    kero:bin 2;
@@ -113,17 +131,19 @@ resource:1_11297-11297 a faldo:Region;
    rdfs:label "chromosome 1:11297-11297";
    faldo:begin resource:1_11297;
    faldo:end resource:1_11297;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11297-11297" .
 
 resource:1_11297 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:11297";
    faldo:position 11297;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11297" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_6 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_6 .
 
-kerobs:LC2ad_6 a obo:SO0000306;
+data:LC2ad_6 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:11300";
    faldo:location resource:1_11300-11300;
    kero:bin 4;
@@ -135,17 +155,19 @@ resource:1_11300-11300 a faldo:Region;
    rdfs:label "chromosome 1:11300-11300";
    faldo:begin resource:1_11300;
    faldo:end resource:1_11300;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11300-11300" .
 
 resource:1_11300 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:11300";
    faldo:position 11300;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11300" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_7 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_7 .
 
-kerobs:LC2ad_7 a obo:SO0000306;
+data:LC2ad_7 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:11343";
    faldo:location resource:1_11343-11343;
    kero:bin 1;
@@ -157,17 +179,19 @@ resource:1_11343-11343 a faldo:Region;
    rdfs:label "chromosome 1:11343-11343";
    faldo:begin resource:1_11343;
    faldo:end resource:1_11343;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11343-11343" .
 
 resource:1_11343 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:11343";
    faldo:position 11343;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11343" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_8 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_8 .
 
-kerobs:LC2ad_8 a obo:SO0000306;
+data:LC2ad_8 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:11346";
    faldo:location resource:1_11346-11346;
    kero:bin 1;
@@ -179,17 +203,19 @@ resource:1_11346-11346 a faldo:Region;
    rdfs:label "chromosome 1:11346-11346";
    faldo:begin resource:1_11346;
    faldo:end resource:1_11346;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11346-11346" .
 
 resource:1_11346 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:11346";
    faldo:position 11346;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_11346" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_9 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_9 .
 
-kerobs:LC2ad_9 a obo:SO0000306;
+data:LC2ad_9 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:16869";
    faldo:location resource:1_16869-16869;
    kero:bin 3;
@@ -201,17 +227,19 @@ resource:1_16869-16869 a faldo:Region;
    rdfs:label "chromosome 1:16869-16869";
    faldo:begin resource:1_16869;
    faldo:end resource:1_16869;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_16869-16869" .
 
 resource:1_16869 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:16869";
    faldo:position 16869;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_16869" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_10 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_10 .
 
-kerobs:LC2ad_10 a obo:SO0000306;
+data:LC2ad_10 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:68056";
    faldo:location resource:1_68056-68056;
    kero:bin 2;
@@ -223,17 +251,19 @@ resource:1_68056-68056 a faldo:Region;
    rdfs:label "chromosome 1:68056-68056";
    faldo:begin resource:1_68056;
    faldo:end resource:1_68056;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68056-68056" .
 
 resource:1_68056 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:68056";
    faldo:position 68056;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68056" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_11 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_11 .
 
-kerobs:LC2ad_11 a obo:SO0000306;
+data:LC2ad_11 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:68122";
    faldo:location resource:1_68122-68122;
    kero:bin 2;
@@ -245,17 +275,19 @@ resource:1_68122-68122 a faldo:Region;
    rdfs:label "chromosome 1:68122-68122";
    faldo:begin resource:1_68122;
    faldo:end resource:1_68122;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68122-68122" .
 
 resource:1_68122 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:68122";
    faldo:position 68122;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68122" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_12 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_12 .
 
-kerobs:LC2ad_12 a obo:SO0000306;
+data:LC2ad_12 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:68239";
    faldo:location resource:1_68239-68239;
    kero:bin 1;
@@ -267,17 +299,19 @@ resource:1_68239-68239 a faldo:Region;
    rdfs:label "chromosome 1:68239-68239";
    faldo:begin resource:1_68239;
    faldo:end resource:1_68239;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68239-68239" .
 
 resource:1_68239 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:68239";
    faldo:position 68239;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68239" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_13 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_13 .
 
-kerobs:LC2ad_13 a obo:SO0000306;
+data:LC2ad_13 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:68246";
    faldo:location resource:1_68246-68246;
    kero:bin 5;
@@ -289,17 +323,19 @@ resource:1_68246-68246 a faldo:Region;
    rdfs:label "chromosome 1:68246-68246";
    faldo:begin resource:1_68246;
    faldo:end resource:1_68246;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68246-68246" .
 
 resource:1_68246 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:68246";
    faldo:position 68246;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_68246" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_14 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_14 .
 
-kerobs:LC2ad_14 a obo:SO0000306;
+data:LC2ad_14 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:128886";
    faldo:location resource:1_128886-128886;
    kero:bin 2;
@@ -311,17 +347,19 @@ resource:1_128886-128886 a faldo:Region;
    rdfs:label "chromosome 1:128886-128886";
    faldo:begin resource:1_128886;
    faldo:end resource:1_128886;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_128886-128886" .
 
 resource:1_128886 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:128886";
    faldo:position 128886;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_128886" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_15 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_15 .
 
-kerobs:LC2ad_15 a obo:SO0000306;
+data:LC2ad_15 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:128904";
    faldo:location resource:1_128904-128904;
    kero:bin 5;
@@ -333,17 +371,19 @@ resource:1_128904-128904 a faldo:Region;
    rdfs:label "chromosome 1:128904-128904";
    faldo:begin resource:1_128904;
    faldo:end resource:1_128904;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_128904-128904" .
 
 resource:1_128904 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:128904";
    faldo:position 128904;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_128904" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_16 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_16 .
 
-kerobs:LC2ad_16 a obo:SO0000306;
+data:LC2ad_16 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:129054";
    faldo:location resource:1_129054-129054;
    kero:bin 3;
@@ -355,17 +395,19 @@ resource:1_129054-129054 a faldo:Region;
    rdfs:label "chromosome 1:129054-129054";
    faldo:begin resource:1_129054;
    faldo:end resource:1_129054;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_129054-129054" .
 
 resource:1_129054 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:129054";
    faldo:position 129054;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_129054" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_17 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_17 .
 
-kerobs:LC2ad_17 a obo:SO0000306;
+data:LC2ad_17 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:258921";
    faldo:location resource:1_258921-258921;
    kero:bin 1;
@@ -377,17 +419,19 @@ resource:1_258921-258921 a faldo:Region;
    rdfs:label "chromosome 1:258921-258921";
    faldo:begin resource:1_258921;
    faldo:end resource:1_258921;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258921-258921" .
 
 resource:1_258921 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:258921";
    faldo:position 258921;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258921" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_18 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_18 .
 
-kerobs:LC2ad_18 a obo:SO0000306;
+data:LC2ad_18 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:258931";
    faldo:location resource:1_258931-258931;
    kero:bin 1;
@@ -399,17 +443,19 @@ resource:1_258931-258931 a faldo:Region;
    rdfs:label "chromosome 1:258931-258931";
    faldo:begin resource:1_258931;
    faldo:end resource:1_258931;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258931-258931" .
 
 resource:1_258931 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:258931";
    faldo:position 258931;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258931" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_19 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_19 .
 
-kerobs:LC2ad_19 a obo:SO0000306;
+data:LC2ad_19 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:258972";
    faldo:location resource:1_258972-258972;
    kero:bin 5;
@@ -421,17 +467,19 @@ resource:1_258972-258972 a faldo:Region;
    rdfs:label "chromosome 1:258972-258972";
    faldo:begin resource:1_258972;
    faldo:end resource:1_258972;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258972-258972" .
 
 resource:1_258972 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:258972";
    faldo:position 258972;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258972" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_20 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_20 .
 
-kerobs:LC2ad_20 a obo:SO0000306;
+data:LC2ad_20 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:258983";
    faldo:location resource:1_258983-258983;
    kero:bin 1;
@@ -443,17 +491,19 @@ resource:1_258983-258983 a faldo:Region;
    rdfs:label "chromosome 1:258983-258983";
    faldo:begin resource:1_258983;
    faldo:end resource:1_258983;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258983-258983" .
 
 resource:1_258983 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:258983";
    faldo:position 258983;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_258983" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_21 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_21 .
 
-kerobs:LC2ad_21 a obo:SO0000306;
+data:LC2ad_21 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:259011";
    faldo:location resource:1_259011-259011;
    kero:bin 3;
@@ -465,17 +515,19 @@ resource:1_259011-259011 a faldo:Region;
    rdfs:label "chromosome 1:259011-259011";
    faldo:begin resource:1_259011;
    faldo:end resource:1_259011;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_259011-259011" .
 
 resource:1_259011 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:259011";
    faldo:position 259011;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_259011" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_22 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_22 .
 
-kerobs:LC2ad_22 a obo:SO0000306;
+data:LC2ad_22 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:259017";
    faldo:location resource:1_259017-259017;
    kero:bin 1;
@@ -487,17 +539,19 @@ resource:1_259017-259017 a faldo:Region;
    rdfs:label "chromosome 1:259017-259017";
    faldo:begin resource:1_259017;
    faldo:end resource:1_259017;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_259017-259017" .
 
 resource:1_259017 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:259017";
    faldo:position 259017;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_259017" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_23 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_23 .
 
-kerobs:LC2ad_23 a obo:SO0000306;
+data:LC2ad_23 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:259023";
    faldo:location resource:1_259023-259023;
    kero:bin 1;
@@ -509,17 +563,19 @@ resource:1_259023-259023 a faldo:Region;
    rdfs:label "chromosome 1:259023-259023";
    faldo:begin resource:1_259023;
    faldo:end resource:1_259023;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_259023-259023" .
 
 resource:1_259023 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:259023";
    faldo:position 259023;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_259023" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_24 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_24 .
 
-kerobs:LC2ad_24 a obo:SO0000306;
+data:LC2ad_24 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:280460";
    faldo:location resource:1_280460-280460;
    kero:bin 4;
@@ -531,17 +587,19 @@ resource:1_280460-280460 a faldo:Region;
    rdfs:label "chromosome 1:280460-280460";
    faldo:begin resource:1_280460;
    faldo:end resource:1_280460;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_280460-280460" .
 
 resource:1_280460 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:280460";
    faldo:position 280460;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_280460" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_25 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_25 .
 
-kerobs:LC2ad_25 a obo:SO0000306;
+data:LC2ad_25 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:280470";
    faldo:location resource:1_280470-280470;
    kero:bin 1;
@@ -553,17 +611,19 @@ resource:1_280470-280470 a faldo:Region;
    rdfs:label "chromosome 1:280470-280470";
    faldo:begin resource:1_280470;
    faldo:end resource:1_280470;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_280470-280470" .
 
 resource:1_280470 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:280470";
    faldo:position 280470;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_280470" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_26 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_26 .
 
-kerobs:LC2ad_26 a obo:SO0000306;
+data:LC2ad_26 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:365633";
    faldo:location resource:1_365633-365633;
    kero:bin 5;
@@ -575,17 +635,19 @@ resource:1_365633-365633 a faldo:Region;
    rdfs:label "chromosome 1:365633-365633";
    faldo:begin resource:1_365633;
    faldo:end resource:1_365633;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_365633-365633" .
 
 resource:1_365633 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:365633";
    faldo:position 365633;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_365633" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_27 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_27 .
 
-kerobs:LC2ad_27 a obo:SO0000306;
+data:LC2ad_27 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:365844";
    faldo:location resource:1_365844-365844;
    kero:bin 2;
@@ -597,17 +659,19 @@ resource:1_365844-365844 a faldo:Region;
    rdfs:label "chromosome 1:365844-365844";
    faldo:begin resource:1_365844;
    faldo:end resource:1_365844;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_365844-365844" .
 
 resource:1_365844 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:365844";
    faldo:position 365844;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_365844" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_28 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_28 .
 
-kerobs:LC2ad_28 a obo:SO0000306;
+data:LC2ad_28 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:494733";
    faldo:location resource:1_494733-494733;
    kero:bin 5;
@@ -619,17 +683,19 @@ resource:1_494733-494733 a faldo:Region;
    rdfs:label "chromosome 1:494733-494733";
    faldo:begin resource:1_494733;
    faldo:end resource:1_494733;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_494733-494733" .
 
 resource:1_494733 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:494733";
    faldo:position 494733;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_494733" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_29 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_29 .
 
-kerobs:LC2ad_29 a obo:SO0000306;
+data:LC2ad_29 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:495429";
    faldo:location resource:1_495429-495429;
    kero:bin 3;
@@ -641,17 +707,19 @@ resource:1_495429-495429 a faldo:Region;
    rdfs:label "chromosome 1:495429-495429";
    faldo:begin resource:1_495429;
    faldo:end resource:1_495429;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_495429-495429" .
 
 resource:1_495429 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:495429";
    faldo:position 495429;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_495429" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_30 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_30 .
 
-kerobs:LC2ad_30 a obo:SO0000306;
+data:LC2ad_30 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:607035";
    faldo:location resource:1_607035-607035;
    kero:bin 4;
@@ -663,17 +731,19 @@ resource:1_607035-607035 a faldo:Region;
    rdfs:label "chromosome 1:607035-607035";
    faldo:begin resource:1_607035;
    faldo:end resource:1_607035;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_607035-607035" .
 
 resource:1_607035 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:607035";
    faldo:position 607035;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_607035" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_31 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_31 .
 
-kerobs:LC2ad_31 a obo:SO0000306;
+data:LC2ad_31 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:616188";
    faldo:location resource:1_616188-616188;
    kero:bin 2;
@@ -685,17 +755,19 @@ resource:1_616188-616188 a faldo:Region;
    rdfs:label "chromosome 1:616188-616188";
    faldo:begin resource:1_616188;
    faldo:end resource:1_616188;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616188-616188" .
 
 resource:1_616188 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:616188";
    faldo:position 616188;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616188" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_32 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_32 .
 
-kerobs:LC2ad_32 a obo:SO0000306;
+data:LC2ad_32 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:616271";
    faldo:location resource:1_616271-616271;
    kero:bin 4;
@@ -707,17 +779,19 @@ resource:1_616271-616271 a faldo:Region;
    rdfs:label "chromosome 1:616271-616271";
    faldo:begin resource:1_616271;
    faldo:end resource:1_616271;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616271-616271" .
 
 resource:1_616271 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:616271";
    faldo:position 616271;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616271" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_33 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_33 .
 
-kerobs:LC2ad_33 a obo:SO0000306;
+data:LC2ad_33 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:616289";
    faldo:location resource:1_616289-616289;
    kero:bin 1;
@@ -729,17 +803,19 @@ resource:1_616289-616289 a faldo:Region;
    rdfs:label "chromosome 1:616289-616289";
    faldo:begin resource:1_616289;
    faldo:end resource:1_616289;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616289-616289" .
 
 resource:1_616289 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:616289";
    faldo:position 616289;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616289" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_34 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_34 .
 
-kerobs:LC2ad_34 a obo:SO0000306;
+data:LC2ad_34 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:616308";
    faldo:location resource:1_616308-616308;
    kero:bin 2;
@@ -751,17 +827,19 @@ resource:1_616308-616308 a faldo:Region;
    rdfs:label "chromosome 1:616308-616308";
    faldo:begin resource:1_616308;
    faldo:end resource:1_616308;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616308-616308" .
 
 resource:1_616308 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:616308";
    faldo:position 616308;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616308" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_35 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_35 .
 
-kerobs:LC2ad_35 a obo:SO0000306;
+data:LC2ad_35 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:616357";
    faldo:location resource:1_616357-616357;
    kero:bin 1;
@@ -773,17 +851,19 @@ resource:1_616357-616357 a faldo:Region;
    rdfs:label "chromosome 1:616357-616357";
    faldo:begin resource:1_616357;
    faldo:end resource:1_616357;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616357-616357" .
 
 resource:1_616357 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:616357";
    faldo:position 616357;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_616357" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_36 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_36 .
 
-kerobs:LC2ad_36 a obo:SO0000306;
+data:LC2ad_36 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629091";
    faldo:location resource:1_629091-629091;
    kero:bin 2;
@@ -795,17 +875,19 @@ resource:1_629091-629091 a faldo:Region;
    rdfs:label "chromosome 1:629091-629091";
    faldo:begin resource:1_629091;
    faldo:end resource:1_629091;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629091-629091" .
 
 resource:1_629091 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629091";
    faldo:position 629091;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629091" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_37 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_37 .
 
-kerobs:LC2ad_37 a obo:SO0000306;
+data:LC2ad_37 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629115";
    faldo:location resource:1_629115-629115;
    kero:bin 1;
@@ -817,17 +899,19 @@ resource:1_629115-629115 a faldo:Region;
    rdfs:label "chromosome 1:629115-629115";
    faldo:begin resource:1_629115;
    faldo:end resource:1_629115;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629115-629115" .
 
 resource:1_629115 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629115";
    faldo:position 629115;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629115" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_38 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_38 .
 
-kerobs:LC2ad_38 a obo:SO0000306;
+data:LC2ad_38 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629121";
    faldo:location resource:1_629121-629121;
    kero:bin 1;
@@ -839,17 +923,19 @@ resource:1_629121-629121 a faldo:Region;
    rdfs:label "chromosome 1:629121-629121";
    faldo:begin resource:1_629121;
    faldo:end resource:1_629121;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629121-629121" .
 
 resource:1_629121 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629121";
    faldo:position 629121;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629121" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_39 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_39 .
 
-kerobs:LC2ad_39 a obo:SO0000306;
+data:LC2ad_39 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629124";
    faldo:location resource:1_629124-629124;
    kero:bin 1;
@@ -861,17 +947,19 @@ resource:1_629124-629124 a faldo:Region;
    rdfs:label "chromosome 1:629124-629124";
    faldo:begin resource:1_629124;
    faldo:end resource:1_629124;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629124-629124" .
 
 resource:1_629124 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629124";
    faldo:position 629124;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629124" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_40 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_40 .
 
-kerobs:LC2ad_40 a obo:SO0000306;
+data:LC2ad_40 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629136";
    faldo:location resource:1_629136-629136;
    kero:bin 1;
@@ -883,17 +971,19 @@ resource:1_629136-629136 a faldo:Region;
    rdfs:label "chromosome 1:629136-629136";
    faldo:begin resource:1_629136;
    faldo:end resource:1_629136;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629136-629136" .
 
 resource:1_629136 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629136";
    faldo:position 629136;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629136" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_41 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_41 .
 
-kerobs:LC2ad_41 a obo:SO0000306;
+data:LC2ad_41 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629154";
    faldo:location resource:1_629154-629154;
    kero:bin 2;
@@ -905,17 +995,19 @@ resource:1_629154-629154 a faldo:Region;
    rdfs:label "chromosome 1:629154-629154";
    faldo:begin resource:1_629154;
    faldo:end resource:1_629154;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629154-629154" .
 
 resource:1_629154 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629154";
    faldo:position 629154;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629154" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_42 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_42 .
 
-kerobs:LC2ad_42 a obo:SO0000306;
+data:LC2ad_42 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629220";
    faldo:location resource:1_629220-629220;
    kero:bin 1;
@@ -927,17 +1019,19 @@ resource:1_629220-629220 a faldo:Region;
    rdfs:label "chromosome 1:629220-629220";
    faldo:begin resource:1_629220;
    faldo:end resource:1_629220;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629220-629220" .
 
 resource:1_629220 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629220";
    faldo:position 629220;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629220" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_43 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_43 .
 
-kerobs:LC2ad_43 a obo:SO0000306;
+data:LC2ad_43 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629296";
    faldo:location resource:1_629296-629296;
    kero:bin 4;
@@ -949,17 +1043,19 @@ resource:1_629296-629296 a faldo:Region;
    rdfs:label "chromosome 1:629296-629296";
    faldo:begin resource:1_629296;
    faldo:end resource:1_629296;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629296-629296" .
 
 resource:1_629296 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629296";
    faldo:position 629296;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629296" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_44 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_44 .
 
-kerobs:LC2ad_44 a obo:SO0000306;
+data:LC2ad_44 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629311";
    faldo:location resource:1_629311-629311;
    kero:bin 1;
@@ -971,17 +1067,19 @@ resource:1_629311-629311 a faldo:Region;
    rdfs:label "chromosome 1:629311-629311";
    faldo:begin resource:1_629311;
    faldo:end resource:1_629311;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629311-629311" .
 
 resource:1_629311 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629311";
    faldo:position 629311;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629311" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_45 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_45 .
 
-kerobs:LC2ad_45 a obo:SO0000306;
+data:LC2ad_45 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629317";
    faldo:location resource:1_629317-629317;
    kero:bin 2;
@@ -993,17 +1091,19 @@ resource:1_629317-629317 a faldo:Region;
    rdfs:label "chromosome 1:629317-629317";
    faldo:begin resource:1_629317;
    faldo:end resource:1_629317;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629317-629317" .
 
 resource:1_629317 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629317";
    faldo:position 629317;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629317" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_46 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_46 .
 
-kerobs:LC2ad_46 a obo:SO0000306;
+data:LC2ad_46 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629322";
    faldo:location resource:1_629322-629322;
    kero:bin 1;
@@ -1015,17 +1115,19 @@ resource:1_629322-629322 a faldo:Region;
    rdfs:label "chromosome 1:629322-629322";
    faldo:begin resource:1_629322;
    faldo:end resource:1_629322;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629322-629322" .
 
 resource:1_629322 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629322";
    faldo:position 629322;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629322" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_47 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_47 .
 
-kerobs:LC2ad_47 a obo:SO0000306;
+data:LC2ad_47 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629515";
    faldo:location resource:1_629515-629515;
    kero:bin 1;
@@ -1037,17 +1139,19 @@ resource:1_629515-629515 a faldo:Region;
    rdfs:label "chromosome 1:629515-629515";
    faldo:begin resource:1_629515;
    faldo:end resource:1_629515;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629515-629515" .
 
 resource:1_629515 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629515";
    faldo:position 629515;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629515" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_48 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_48 .
 
-kerobs:LC2ad_48 a obo:SO0000306;
+data:LC2ad_48 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629545";
    faldo:location resource:1_629545-629545;
    kero:bin 2;
@@ -1059,17 +1163,19 @@ resource:1_629545-629545 a faldo:Region;
    rdfs:label "chromosome 1:629545-629545";
    faldo:begin resource:1_629545;
    faldo:end resource:1_629545;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629545-629545" .
 
 resource:1_629545 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629545";
    faldo:position 629545;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629545" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_49 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_49 .
 
-kerobs:LC2ad_49 a obo:SO0000306;
+data:LC2ad_49 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629596";
    faldo:location resource:1_629596-629596;
    kero:bin 1;
@@ -1081,17 +1187,19 @@ resource:1_629596-629596 a faldo:Region;
    rdfs:label "chromosome 1:629596-629596";
    faldo:begin resource:1_629596;
    faldo:end resource:1_629596;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629596-629596" .
 
 resource:1_629596 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629596";
    faldo:position 629596;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629596" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_50 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_50 .
 
-kerobs:LC2ad_50 a obo:SO0000306;
+data:LC2ad_50 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629609";
    faldo:location resource:1_629609-629609;
    kero:bin 1;
@@ -1103,17 +1211,19 @@ resource:1_629609-629609 a faldo:Region;
    rdfs:label "chromosome 1:629609-629609";
    faldo:begin resource:1_629609;
    faldo:end resource:1_629609;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629609-629609" .
 
 resource:1_629609 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629609";
    faldo:position 629609;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629609" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_51 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_51 .
 
-kerobs:LC2ad_51 a obo:SO0000306;
+data:LC2ad_51 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629633";
    faldo:location resource:1_629633-629633;
    kero:bin 1;
@@ -1125,17 +1235,19 @@ resource:1_629633-629633 a faldo:Region;
    rdfs:label "chromosome 1:629633-629633";
    faldo:begin resource:1_629633;
    faldo:end resource:1_629633;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629633-629633" .
 
 resource:1_629633 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629633";
    faldo:position 629633;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629633" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_52 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_52 .
 
-kerobs:LC2ad_52 a obo:SO0000306;
+data:LC2ad_52 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629660";
    faldo:location resource:1_629660-629660;
    kero:bin 2;
@@ -1147,17 +1259,19 @@ resource:1_629660-629660 a faldo:Region;
    rdfs:label "chromosome 1:629660-629660";
    faldo:begin resource:1_629660;
    faldo:end resource:1_629660;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629660-629660" .
 
 resource:1_629660 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629660";
    faldo:position 629660;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629660" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_53 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_53 .
 
-kerobs:LC2ad_53 a obo:SO0000306;
+data:LC2ad_53 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629701";
    faldo:location resource:1_629701-629701;
    kero:bin 1;
@@ -1169,17 +1283,19 @@ resource:1_629701-629701 a faldo:Region;
    rdfs:label "chromosome 1:629701-629701";
    faldo:begin resource:1_629701;
    faldo:end resource:1_629701;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629701-629701" .
 
 resource:1_629701 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629701";
    faldo:position 629701;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629701" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_54 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_54 .
 
-kerobs:LC2ad_54 a obo:SO0000306;
+data:LC2ad_54 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629710";
    faldo:location resource:1_629710-629710;
    kero:bin 2;
@@ -1191,17 +1307,19 @@ resource:1_629710-629710 a faldo:Region;
    rdfs:label "chromosome 1:629710-629710";
    faldo:begin resource:1_629710;
    faldo:end resource:1_629710;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629710-629710" .
 
 resource:1_629710 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629710";
    faldo:position 629710;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629710" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_55 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_55 .
 
-kerobs:LC2ad_55 a obo:SO0000306;
+data:LC2ad_55 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629790";
    faldo:location resource:1_629790-629790;
    kero:bin 1;
@@ -1213,17 +1331,19 @@ resource:1_629790-629790 a faldo:Region;
    rdfs:label "chromosome 1:629790-629790";
    faldo:begin resource:1_629790;
    faldo:end resource:1_629790;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629790-629790" .
 
 resource:1_629790 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629790";
    faldo:position 629790;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629790" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_56 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_56 .
 
-kerobs:LC2ad_56 a obo:SO0000306;
+data:LC2ad_56 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629824";
    faldo:location resource:1_629824-629824;
    kero:bin 2;
@@ -1235,17 +1355,19 @@ resource:1_629824-629824 a faldo:Region;
    rdfs:label "chromosome 1:629824-629824";
    faldo:begin resource:1_629824;
    faldo:end resource:1_629824;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629824-629824" .
 
 resource:1_629824 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629824";
    faldo:position 629824;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629824" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_57 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_57 .
 
-kerobs:LC2ad_57 a obo:SO0000306;
+data:LC2ad_57 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629834";
    faldo:location resource:1_629834-629834;
    kero:bin 1;
@@ -1257,17 +1379,19 @@ resource:1_629834-629834 a faldo:Region;
    rdfs:label "chromosome 1:629834-629834";
    faldo:begin resource:1_629834;
    faldo:end resource:1_629834;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629834-629834" .
 
 resource:1_629834 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629834";
    faldo:position 629834;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629834" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_58 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_58 .
 
-kerobs:LC2ad_58 a obo:SO0000306;
+data:LC2ad_58 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:629882";
    faldo:location resource:1_629882-629882;
    kero:bin 1;
@@ -1279,17 +1403,19 @@ resource:1_629882-629882 a faldo:Region;
    rdfs:label "chromosome 1:629882-629882";
    faldo:begin resource:1_629882;
    faldo:end resource:1_629882;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629882-629882" .
 
 resource:1_629882 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:629882";
    faldo:position 629882;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_629882" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_59 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_59 .
 
-kerobs:LC2ad_59 a obo:SO0000306;
+data:LC2ad_59 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630017";
    faldo:location resource:1_630017-630017;
    kero:bin 1;
@@ -1301,17 +1427,19 @@ resource:1_630017-630017 a faldo:Region;
    rdfs:label "chromosome 1:630017-630017";
    faldo:begin resource:1_630017;
    faldo:end resource:1_630017;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630017-630017" .
 
 resource:1_630017 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630017";
    faldo:position 630017;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630017" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_60 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_60 .
 
-kerobs:LC2ad_60 a obo:SO0000306;
+data:LC2ad_60 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630089";
    faldo:location resource:1_630089-630089;
    kero:bin 2;
@@ -1323,17 +1451,19 @@ resource:1_630089-630089 a faldo:Region;
    rdfs:label "chromosome 1:630089-630089";
    faldo:begin resource:1_630089;
    faldo:end resource:1_630089;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630089-630089" .
 
 resource:1_630089 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630089";
    faldo:position 630089;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630089" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_61 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_61 .
 
-kerobs:LC2ad_61 a obo:SO0000306;
+data:LC2ad_61 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630165";
    faldo:location resource:1_630165-630165;
    kero:bin 2;
@@ -1345,17 +1475,19 @@ resource:1_630165-630165 a faldo:Region;
    rdfs:label "chromosome 1:630165-630165";
    faldo:begin resource:1_630165;
    faldo:end resource:1_630165;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630165-630165" .
 
 resource:1_630165 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630165";
    faldo:position 630165;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630165" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_62 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_62 .
 
-kerobs:LC2ad_62 a obo:SO0000306;
+data:LC2ad_62 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630223";
    faldo:location resource:1_630223-630223;
    kero:bin 1;
@@ -1367,17 +1499,19 @@ resource:1_630223-630223 a faldo:Region;
    rdfs:label "chromosome 1:630223-630223";
    faldo:begin resource:1_630223;
    faldo:end resource:1_630223;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630223-630223" .
 
 resource:1_630223 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630223";
    faldo:position 630223;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630223" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_63 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_63 .
 
-kerobs:LC2ad_63 a obo:SO0000306;
+data:LC2ad_63 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630281";
    faldo:location resource:1_630281-630281;
    kero:bin 2;
@@ -1389,17 +1523,19 @@ resource:1_630281-630281 a faldo:Region;
    rdfs:label "chromosome 1:630281-630281";
    faldo:begin resource:1_630281;
    faldo:end resource:1_630281;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630281-630281" .
 
 resource:1_630281 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630281";
    faldo:position 630281;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630281" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_64 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_64 .
 
-kerobs:LC2ad_64 a obo:SO0000306;
+data:LC2ad_64 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630333";
    faldo:location resource:1_630333-630333;
    kero:bin 8;
@@ -1411,17 +1547,19 @@ resource:1_630333-630333 a faldo:Region;
    rdfs:label "chromosome 1:630333-630333";
    faldo:begin resource:1_630333;
    faldo:end resource:1_630333;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630333-630333" .
 
 resource:1_630333 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630333";
    faldo:position 630333;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630333" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_65 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_65 .
 
-kerobs:LC2ad_65 a obo:SO0000306;
+data:LC2ad_65 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630406";
    faldo:location resource:1_630406-630406;
    kero:bin 2;
@@ -1433,17 +1571,19 @@ resource:1_630406-630406 a faldo:Region;
    rdfs:label "chromosome 1:630406-630406";
    faldo:begin resource:1_630406;
    faldo:end resource:1_630406;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630406-630406" .
 
 resource:1_630406 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630406";
    faldo:position 630406;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630406" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_66 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_66 .
 
-kerobs:LC2ad_66 a obo:SO0000306;
+data:LC2ad_66 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630413";
    faldo:location resource:1_630413-630413;
    kero:bin 1;
@@ -1455,17 +1595,19 @@ resource:1_630413-630413 a faldo:Region;
    rdfs:label "chromosome 1:630413-630413";
    faldo:begin resource:1_630413;
    faldo:end resource:1_630413;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630413-630413" .
 
 resource:1_630413 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630413";
    faldo:position 630413;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630413" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_67 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_67 .
 
-kerobs:LC2ad_67 a obo:SO0000306;
+data:LC2ad_67 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630440";
    faldo:location resource:1_630440-630440;
    kero:bin 1;
@@ -1477,17 +1619,19 @@ resource:1_630440-630440 a faldo:Region;
    rdfs:label "chromosome 1:630440-630440";
    faldo:begin resource:1_630440;
    faldo:end resource:1_630440;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630440-630440" .
 
 resource:1_630440 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630440";
    faldo:position 630440;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630440" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_68 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_68 .
 
-kerobs:LC2ad_68 a obo:SO0000306;
+data:LC2ad_68 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630522";
    faldo:location resource:1_630522-630522;
    kero:bin 2;
@@ -1499,17 +1643,19 @@ resource:1_630522-630522 a faldo:Region;
    rdfs:label "chromosome 1:630522-630522";
    faldo:begin resource:1_630522;
    faldo:end resource:1_630522;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630522-630522" .
 
 resource:1_630522 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630522";
    faldo:position 630522;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630522" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_69 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_69 .
 
-kerobs:LC2ad_69 a obo:SO0000306;
+data:LC2ad_69 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630569";
    faldo:location resource:1_630569-630569;
    kero:bin 1;
@@ -1521,17 +1667,19 @@ resource:1_630569-630569 a faldo:Region;
    rdfs:label "chromosome 1:630569-630569";
    faldo:begin resource:1_630569;
    faldo:end resource:1_630569;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630569-630569" .
 
 resource:1_630569 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630569";
    faldo:position 630569;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630569" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_70 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_70 .
 
-kerobs:LC2ad_70 a obo:SO0000306;
+data:LC2ad_70 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630629";
    faldo:location resource:1_630629-630629;
    kero:bin 2;
@@ -1543,17 +1691,19 @@ resource:1_630629-630629 a faldo:Region;
    rdfs:label "chromosome 1:630629-630629";
    faldo:begin resource:1_630629;
    faldo:end resource:1_630629;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630629-630629" .
 
 resource:1_630629 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630629";
    faldo:position 630629;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630629" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_71 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_71 .
 
-kerobs:LC2ad_71 a obo:SO0000306;
+data:LC2ad_71 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630792";
    faldo:location resource:1_630792-630792;
    kero:bin 2;
@@ -1565,17 +1715,19 @@ resource:1_630792-630792 a faldo:Region;
    rdfs:label "chromosome 1:630792-630792";
    faldo:begin resource:1_630792;
    faldo:end resource:1_630792;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630792-630792" .
 
 resource:1_630792 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630792";
    faldo:position 630792;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630792" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_72 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_72 .
 
-kerobs:LC2ad_72 a obo:SO0000306;
+data:LC2ad_72 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630907";
    faldo:location resource:1_630907-630907;
    kero:bin 2;
@@ -1587,17 +1739,19 @@ resource:1_630907-630907 a faldo:Region;
    rdfs:label "chromosome 1:630907-630907";
    faldo:begin resource:1_630907;
    faldo:end resource:1_630907;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630907-630907" .
 
 resource:1_630907 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630907";
    faldo:position 630907;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630907" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_73 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_73 .
 
-kerobs:LC2ad_73 a obo:SO0000306;
+data:LC2ad_73 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630910";
    faldo:location resource:1_630910-630910;
    kero:bin 1;
@@ -1609,17 +1763,19 @@ resource:1_630910-630910 a faldo:Region;
    rdfs:label "chromosome 1:630910-630910";
    faldo:begin resource:1_630910;
    faldo:end resource:1_630910;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630910-630910" .
 
 resource:1_630910 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630910";
    faldo:position 630910;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630910" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_74 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_74 .
 
-kerobs:LC2ad_74 a obo:SO0000306;
+data:LC2ad_74 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630913";
    faldo:location resource:1_630913-630913;
    kero:bin 1;
@@ -1631,17 +1787,19 @@ resource:1_630913-630913 a faldo:Region;
    rdfs:label "chromosome 1:630913-630913";
    faldo:begin resource:1_630913;
    faldo:end resource:1_630913;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630913-630913" .
 
 resource:1_630913 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630913";
    faldo:position 630913;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630913" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_75 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_75 .
 
-kerobs:LC2ad_75 a obo:SO0000306;
+data:LC2ad_75 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630925";
    faldo:location resource:1_630925-630925;
    kero:bin 1;
@@ -1653,17 +1811,19 @@ resource:1_630925-630925 a faldo:Region;
    rdfs:label "chromosome 1:630925-630925";
    faldo:begin resource:1_630925;
    faldo:end resource:1_630925;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630925-630925" .
 
 resource:1_630925 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630925";
    faldo:position 630925;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630925" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_76 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_76 .
 
-kerobs:LC2ad_76 a obo:SO0000306;
+data:LC2ad_76 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630937";
    faldo:location resource:1_630937-630937;
    kero:bin 1;
@@ -1675,17 +1835,19 @@ resource:1_630937-630937 a faldo:Region;
    rdfs:label "chromosome 1:630937-630937";
    faldo:begin resource:1_630937;
    faldo:end resource:1_630937;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630937-630937" .
 
 resource:1_630937 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630937";
    faldo:position 630937;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630937" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_77 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_77 .
 
-kerobs:LC2ad_77 a obo:SO0000306;
+data:LC2ad_77 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:630960";
    faldo:location resource:1_630960-630960;
    kero:bin 1;
@@ -1697,17 +1859,19 @@ resource:1_630960-630960 a faldo:Region;
    rdfs:label "chromosome 1:630960-630960";
    faldo:begin resource:1_630960;
    faldo:end resource:1_630960;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630960-630960" .
 
 resource:1_630960 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:630960";
    faldo:position 630960;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_630960" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_78 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_78 .
 
-kerobs:LC2ad_78 a obo:SO0000306;
+data:LC2ad_78 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631079";
    faldo:location resource:1_631079-631079;
    kero:bin 1;
@@ -1719,17 +1883,19 @@ resource:1_631079-631079 a faldo:Region;
    rdfs:label "chromosome 1:631079-631079";
    faldo:begin resource:1_631079;
    faldo:end resource:1_631079;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631079-631079" .
 
 resource:1_631079 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631079";
    faldo:position 631079;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631079" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_79 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_79 .
 
-kerobs:LC2ad_79 a obo:SO0000306;
+data:LC2ad_79 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631082";
    faldo:location resource:1_631082-631082;
    kero:bin 1;
@@ -1741,17 +1907,19 @@ resource:1_631082-631082 a faldo:Region;
    rdfs:label "chromosome 1:631082-631082";
    faldo:begin resource:1_631082;
    faldo:end resource:1_631082;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631082-631082" .
 
 resource:1_631082 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631082";
    faldo:position 631082;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631082" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_80 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_80 .
 
-kerobs:LC2ad_80 a obo:SO0000306;
+data:LC2ad_80 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631086";
    faldo:location resource:1_631086-631086;
    kero:bin 2;
@@ -1763,17 +1931,19 @@ resource:1_631086-631086 a faldo:Region;
    rdfs:label "chromosome 1:631086-631086";
    faldo:begin resource:1_631086;
    faldo:end resource:1_631086;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631086-631086" .
 
 resource:1_631086 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631086";
    faldo:position 631086;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631086" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_81 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_81 .
 
-kerobs:LC2ad_81 a obo:SO0000306;
+data:LC2ad_81 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631139";
    faldo:location resource:1_631139-631139;
    kero:bin 3;
@@ -1785,17 +1955,19 @@ resource:1_631139-631139 a faldo:Region;
    rdfs:label "chromosome 1:631139-631139";
    faldo:begin resource:1_631139;
    faldo:end resource:1_631139;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631139-631139" .
 
 resource:1_631139 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631139";
    faldo:position 631139;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631139" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_82 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_82 .
 
-kerobs:LC2ad_82 a obo:SO0000306;
+data:LC2ad_82 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631142";
    faldo:location resource:1_631142-631142;
    kero:bin 1;
@@ -1807,17 +1979,19 @@ resource:1_631142-631142 a faldo:Region;
    rdfs:label "chromosome 1:631142-631142";
    faldo:begin resource:1_631142;
    faldo:end resource:1_631142;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631142-631142" .
 
 resource:1_631142 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631142";
    faldo:position 631142;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631142" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_83 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_83 .
 
-kerobs:LC2ad_83 a obo:SO0000306;
+data:LC2ad_83 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631185";
    faldo:location resource:1_631185-631185;
    kero:bin 1;
@@ -1829,17 +2003,19 @@ resource:1_631185-631185 a faldo:Region;
    rdfs:label "chromosome 1:631185-631185";
    faldo:begin resource:1_631185;
    faldo:end resource:1_631185;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631185-631185" .
 
 resource:1_631185 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631185";
    faldo:position 631185;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631185" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_84 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_84 .
 
-kerobs:LC2ad_84 a obo:SO0000306;
+data:LC2ad_84 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631190";
    faldo:location resource:1_631190-631190;
    kero:bin 1;
@@ -1851,17 +2027,19 @@ resource:1_631190-631190 a faldo:Region;
    rdfs:label "chromosome 1:631190-631190";
    faldo:begin resource:1_631190;
    faldo:end resource:1_631190;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631190-631190" .
 
 resource:1_631190 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631190";
    faldo:position 631190;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631190" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_85 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_85 .
 
-kerobs:LC2ad_85 a obo:SO0000306;
+data:LC2ad_85 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631223";
    faldo:location resource:1_631223-631223;
    kero:bin 2;
@@ -1873,17 +2051,19 @@ resource:1_631223-631223 a faldo:Region;
    rdfs:label "chromosome 1:631223-631223";
    faldo:begin resource:1_631223;
    faldo:end resource:1_631223;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631223-631223" .
 
 resource:1_631223 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631223";
    faldo:position 631223;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631223" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_86 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_86 .
 
-kerobs:LC2ad_86 a obo:SO0000306;
+data:LC2ad_86 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631238";
    faldo:location resource:1_631238-631238;
    kero:bin 1;
@@ -1895,17 +2075,19 @@ resource:1_631238-631238 a faldo:Region;
    rdfs:label "chromosome 1:631238-631238";
    faldo:begin resource:1_631238;
    faldo:end resource:1_631238;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631238-631238" .
 
 resource:1_631238 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631238";
    faldo:position 631238;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631238" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_87 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_87 .
 
-kerobs:LC2ad_87 a obo:SO0000306;
+data:LC2ad_87 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631244";
    faldo:location resource:1_631244-631244;
    kero:bin 1;
@@ -1917,17 +2099,19 @@ resource:1_631244-631244 a faldo:Region;
    rdfs:label "chromosome 1:631244-631244";
    faldo:begin resource:1_631244;
    faldo:end resource:1_631244;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631244-631244" .
 
 resource:1_631244 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631244";
    faldo:position 631244;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631244" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_88 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_88 .
 
-kerobs:LC2ad_88 a obo:SO0000306;
+data:LC2ad_88 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631298";
    faldo:location resource:1_631298-631298;
    kero:bin 1;
@@ -1939,17 +2123,19 @@ resource:1_631298-631298 a faldo:Region;
    rdfs:label "chromosome 1:631298-631298";
    faldo:begin resource:1_631298;
    faldo:end resource:1_631298;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631298-631298" .
 
 resource:1_631298 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631298";
    faldo:position 631298;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631298" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_89 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_89 .
 
-kerobs:LC2ad_89 a obo:SO0000306;
+data:LC2ad_89 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631334";
    faldo:location resource:1_631334-631334;
    kero:bin 2;
@@ -1961,17 +2147,19 @@ resource:1_631334-631334 a faldo:Region;
    rdfs:label "chromosome 1:631334-631334";
    faldo:begin resource:1_631334;
    faldo:end resource:1_631334;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631334-631334" .
 
 resource:1_631334 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631334";
    faldo:position 631334;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631334" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_90 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_90 .
 
-kerobs:LC2ad_90 a obo:SO0000306;
+data:LC2ad_90 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631343";
    faldo:location resource:1_631343-631343;
    kero:bin 1;
@@ -1983,17 +2171,19 @@ resource:1_631343-631343 a faldo:Region;
    rdfs:label "chromosome 1:631343-631343";
    faldo:begin resource:1_631343;
    faldo:end resource:1_631343;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631343-631343" .
 
 resource:1_631343 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631343";
    faldo:position 631343;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631343" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_91 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_91 .
 
-kerobs:LC2ad_91 a obo:SO0000306;
+data:LC2ad_91 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631351";
    faldo:location resource:1_631351-631351;
    kero:bin 1;
@@ -2005,17 +2195,19 @@ resource:1_631351-631351 a faldo:Region;
    rdfs:label "chromosome 1:631351-631351";
    faldo:begin resource:1_631351;
    faldo:end resource:1_631351;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631351-631351" .
 
 resource:1_631351 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631351";
    faldo:position 631351;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631351" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_92 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_92 .
 
-kerobs:LC2ad_92 a obo:SO0000306;
+data:LC2ad_92 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631359";
    faldo:location resource:1_631359-631359;
    kero:bin 1;
@@ -2027,17 +2219,19 @@ resource:1_631359-631359 a faldo:Region;
    rdfs:label "chromosome 1:631359-631359";
    faldo:begin resource:1_631359;
    faldo:end resource:1_631359;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631359-631359" .
 
 resource:1_631359 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631359";
    faldo:position 631359;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631359" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_93 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_93 .
 
-kerobs:LC2ad_93 a obo:SO0000306;
+data:LC2ad_93 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631682";
    faldo:location resource:1_631682-631682;
    kero:bin 2;
@@ -2049,17 +2243,19 @@ resource:1_631682-631682 a faldo:Region;
    rdfs:label "chromosome 1:631682-631682";
    faldo:begin resource:1_631682;
    faldo:end resource:1_631682;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631682-631682" .
 
 resource:1_631682 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631682";
    faldo:position 631682;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631682" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_94 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_94 .
 
-kerobs:LC2ad_94 a obo:SO0000306;
+data:LC2ad_94 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631710";
    faldo:location resource:1_631710-631710;
    kero:bin 2;
@@ -2071,17 +2267,19 @@ resource:1_631710-631710 a faldo:Region;
    rdfs:label "chromosome 1:631710-631710";
    faldo:begin resource:1_631710;
    faldo:end resource:1_631710;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631710-631710" .
 
 resource:1_631710 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631710";
    faldo:position 631710;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631710" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_95 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_95 .
 
-kerobs:LC2ad_95 a obo:SO0000306;
+data:LC2ad_95 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631733";
    faldo:location resource:1_631733-631733;
    kero:bin 1;
@@ -2093,17 +2291,19 @@ resource:1_631733-631733 a faldo:Region;
    rdfs:label "chromosome 1:631733-631733";
    faldo:begin resource:1_631733;
    faldo:end resource:1_631733;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631733-631733" .
 
 resource:1_631733 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631733";
    faldo:position 631733;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631733" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_96 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_96 .
 
-kerobs:LC2ad_96 a obo:SO0000306;
+data:LC2ad_96 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631742";
    faldo:location resource:1_631742-631742;
    kero:bin 1;
@@ -2115,17 +2315,19 @@ resource:1_631742-631742 a faldo:Region;
    rdfs:label "chromosome 1:631742-631742";
    faldo:begin resource:1_631742;
    faldo:end resource:1_631742;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631742-631742" .
 
 resource:1_631742 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631742";
    faldo:position 631742;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631742" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_97 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_97 .
 
-kerobs:LC2ad_97 a obo:SO0000306;
+data:LC2ad_97 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631859";
    faldo:location resource:1_631859-631859;
    kero:bin 2;
@@ -2137,17 +2339,19 @@ resource:1_631859-631859 a faldo:Region;
    rdfs:label "chromosome 1:631859-631859";
    faldo:begin resource:1_631859;
    faldo:end resource:1_631859;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631859-631859" .
 
 resource:1_631859 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631859";
    faldo:position 631859;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631859" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_98 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_98 .
 
-kerobs:LC2ad_98 a obo:SO0000306;
+data:LC2ad_98 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631932";
    faldo:location resource:1_631932-631932;
    kero:bin 1;
@@ -2159,17 +2363,19 @@ resource:1_631932-631932 a faldo:Region;
    rdfs:label "chromosome 1:631932-631932";
    faldo:begin resource:1_631932;
    faldo:end resource:1_631932;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631932-631932" .
 
 resource:1_631932 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631932";
    faldo:position 631932;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631932" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_99 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_99 .
 
-kerobs:LC2ad_99 a obo:SO0000306;
+data:LC2ad_99 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631968";
    faldo:location resource:1_631968-631968;
    kero:bin 1;
@@ -2181,17 +2387,19 @@ resource:1_631968-631968 a faldo:Region;
    rdfs:label "chromosome 1:631968-631968";
    faldo:begin resource:1_631968;
    faldo:end resource:1_631968;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631968-631968" .
 
 resource:1_631968 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631968";
    faldo:position 631968;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631968" .
 
-dataset:LC2ad kero:hasMethylationSite kerobs:LC2ad_100 .
+dataset:LC2ad kero:hasMethylationSite data:LC2ad_100 .
 
-kerobs:LC2ad_100 a obo:SO0000306;
+data:LC2ad_100 a obo:SO_0000306;
    rdfs:label "Methylation site on chromosome 1:631978";
    faldo:location resource:1_631978-631978;
    kero:bin 1;
@@ -2203,10 +2411,12 @@ resource:1_631978-631978 a faldo:Region;
    rdfs:label "chromosome 1:631978-631978";
    faldo:begin resource:1_631978;
    faldo:end resource:1_631978;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631978-631978" .
 
 resource:1_631978 a faldo:ExactPosition,
      faldo:StrandedPosition;
    rdfs:label "chromosome 1:631978";
    faldo:position 631978;
-   faldo:reference resource:1 .
+   faldo:reference resource:1;
+   dcterms:identifier "1_631978" .

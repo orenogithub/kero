@@ -1,35 +1,21 @@
-@prefix : <http://dbtss.hgc.jp/ontology/kero.owl#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix : <http://kero.hgc.jp/ontology/kero.owl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix kero: <http://dbtss.hgc.jp/ontology/kero.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://http://kero.hgc.jp/ontology/kero.owl> .
+@base <http://kero.hgc.jp/ontology/kero.owl> .
 
-<http://http://kero.hgc.jp/ontology/kero.owl> rdf:type owl:Ontology ;
-                                              
-                                              rdfs:label "KERO"@en ;
-                                              
-                                              owl:versionInfo 0.1 ;
-                                              
-                                              rdfs:comment "Kashiwa Encyclopedia of Regulatory Omics Ontology"@en .
-
-
-#################################################################
-#
-#    Annotation properties
-#
-#################################################################
-
-
-###  http://www.w3.org/2002/07/owl#sameAs
-
-owl:sameAs rdf:type owl:AnnotationProperty .
-
-
-
+<http://kero.hgc.jp/ontology/kero.owl> rdf:type owl:Ontology ;
+                                       
+                                       rdfs:label "KERO" ;
+                                       
+                                       owl:versionInfo 0.1 ;
+                                       
+                                       rdfs:comment "Kashiwa Encyclopedia of Regulatory Omics Ontology" ;
+                                       
+                                       owl:imports obo:so.owl .
 
 
 #################################################################
@@ -39,67 +25,17 @@ owl:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 
-###  http://http://kero.hgc.jp/ontology/kero.owl#geneBody
+###  http://kero.hgc.jp/ontology/kero.owl#hasMethylationSite
 
-:geneBody rdf:type owl:ObjectProperty ;
-          
-          rdfs:label "Gene Body"@en ;
-          
-          rdfs:comment "Indicate mature mRNA region of gene."@en ;
-          
-          rdfs:range :GeneBody ;
-          
-          rdfs:subPropertyOf :hasRegion .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#hasGene
-
-:hasGene rdf:type owl:ObjectProperty ;
-         
-         rdfs:label "has Gene"@en ;
-         
-         rdfs:comment "Indicate gene in file."@en ;
-         
-         rdfs:domain :MethylSeqFile ;
-         
-         rdfs:range :Region .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#hasRegion
-
-:hasRegion rdf:type owl:ObjectProperty ;
-           
-           rdfs:label "has Region"@en ;
-           
-           rdfs:comment "Indicate sequence region."@en ;
-           
-           rdfs:range :Region ;
-           
-           rdfs:domain :Region .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#hasValue
-
-:hasValue rdf:type owl:ObjectProperty ;
-          
-          rdfs:label "has value"@en .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#upstreamRegion
-
-:upstreamRegion rdf:type owl:ObjectProperty ;
-                
-                rdfs:label "Upstream Region"@en ;
-                
-                rdfs:comment "Indicate upstream Region of gene."@en ;
-                
-                rdfs:range :UpstreamRegion ;
-                
-                rdfs:subPropertyOf :hasRegion .
+:hasMethylationSite rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "has Methlation Site"@en ;
+                    
+                    rdfs:comment "Indicate methylation site in the dataset."@en ;
+                    
+                    rdfs:domain :MethylSeqDataset ;
+                    
+                    rdfs:range obo:SO_0000306 .
 
 
 
@@ -112,153 +48,63 @@ owl:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 
-###  http://http://kero.hgc.jp/ontology/kero.owl#avgMethylRatio
+###  http://kero.hgc.jp/ontology/kero.owl#bin
 
-:avgMethylRatio rdf:type owl:DatatypeProperty ;
-                
-                rdfs:label "Avg Methyl Ratio"@en ;
-                
-                rdfs:comment "Average methylation ratio within sequence region."@en ;
-                
-                rdfs:subPropertyOf :methylRatio .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#avgMethylRatioDepthOver5
-
-:avgMethylRatioDepthOver5 rdf:type owl:DatatypeProperty ;
-                          
-                          rdfs:label "Avg Methyl Ratio Depth Over 5"@en ;
-                          
-                          rdfs:comment "Average methylation ratio within sequence region over 5 depth reads."@en ;
-                          
-                          rdfs:subPropertyOf :avgMethylRatio .
+:bin rdf:type owl:DatatypeProperty ;
+     
+     rdfs:label "bin"@en ;
+     
+     rdfs:comment "Indexing field to speed large scale queries."@en ;
+     
+     rdfs:domain obo:SO_0000306 ;
+     
+     rdfs:range xsd:int .
 
 
 
-###  http://http://kero.hgc.jp/ontology/kero.owl#bin
+###  http://kero.hgc.jp/ontology/kero.owl#caNum
 
-:bin rdf:type owl:DatatypeProperty .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#count
-
-:count rdf:type owl:DatatypeProperty .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#experimentNumCpG
-
-:experimentNumCpG rdf:type owl:DatatypeProperty ;
-                  
-                  rdfs:label "Experiment Num CpG"@en ;
-                  
-                  rdfs:comment "Number of experimentally detected CpG sites in sequence region."@en ;
-                  
-                  rdfs:subPropertyOf :numCpG .
+:caNum rdf:type owl:DatatypeProperty ;
+       
+       rdfs:label "Number of CA tags"@en ;
+       
+       rdfs:subPropertyOf :tagCount ;
+       
+       rdfs:domain obo:SO_0000306 ;
+       
+       rdfs:range xsd:int .
 
 
 
-###  http://http://kero.hgc.jp/ontology/kero.owl#experimentNumCpGDepthOver5
+###  http://kero.hgc.jp/ontology/kero.owl#cgNum
 
-:experimentNumCpGDepthOver5 rdf:type owl:DatatypeProperty ;
-                            
-                            rdfs:label "Experiment Num CpG Depth Over 5"@en ;
-                            
-                            rdfs:comment "Number of experimentally detected CpG sites in sequence region over 5 depth reads."@en ;
-                            
-                            rdfs:subPropertyOf :experimentNumCpG .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#length
-
-:length rdf:type owl:DatatypeProperty ;
-        
-        rdfs:label "Length"@en ;
-        
-        rdfs:comment "Length of sequence."@en ;
-        
-        rdfs:domain :Region ;
-        
-        rdfs:range xsd:int .
+:cgNum rdf:type owl:DatatypeProperty ;
+       
+       rdfs:label "Number of CG tags"@en ;
+       
+       rdfs:subPropertyOf :tagCount ;
+       
+       rdfs:domain obo:SO_0000306 ;
+       
+       rdfs:range xsd:int .
 
 
 
-###  http://http://kero.hgc.jp/ontology/kero.owl#mRNAlength
+###  http://kero.hgc.jp/ontology/kero.owl#count
 
-:mRNAlength rdf:type owl:DatatypeProperty ;
-            
-            rdfs:label "Length of mRNA."@en ;
-            
-            rdfs:comment "mRNA Length"@en ;
-            
-            rdfs:subPropertyOf :length .
+:count rdf:type owl:DatatypeProperty ;
+       
+       rdfs:label "count"@en .
 
 
 
-###  http://http://kero.hgc.jp/ontology/kero.owl#methylRatio
-
-:methylRatio rdf:type owl:DatatypeProperty ;
-             
-             rdfs:label "Methyl Ratio"@en ;
-             
-             rdfs:comment "Experimentally detected methylation ratio of sequence region."@en ;
-             
-             rdfs:domain :Region ;
-             
-             rdfs:range xsd:float .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#numCpG
-
-:numCpG rdf:type owl:DatatypeProperty ;
-        
-        rdfs:label "Num CpG"@en ;
-        
-        rdfs:comment "Number of CpG sites in sequence region."@en ;
-        
-        rdfs:domain :Region ;
-        
-        rdfs:range xsd:int .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#refseqId
-
-:refseqId rdf:type owl:DatatypeProperty ;
-          
-          rdfs:label "RefSeq ID"@en ;
-          
-          rdfs:comment "Identifier of RefSeq."@en .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#repprm
-
-:repprm rdf:type owl:DatatypeProperty .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#tagCount
+###  http://kero.hgc.jp/ontology/kero.owl#tagCount
 
 :tagCount rdf:type owl:DatatypeProperty ;
           
+          rdfs:label "tag count"@en ;
+          
           rdfs:subPropertyOf :count .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#theoreticalNumCpG
-
-:theoreticalNumCpG rdf:type owl:DatatypeProperty ;
-                   
-                   rdfs:label "Theoretical Num CpG"@en ;
-                   
-                   rdfs:comment "Number of theoretical CpG sites in sequence region."@en ;
-                   
-                   rdfs:subPropertyOf :numCpG .
 
 
 
@@ -271,110 +117,21 @@ owl:sameAs rdf:type owl:AnnotationProperty .
 #################################################################
 
 
-###  http://http://kero.hgc.jp/ontology/kero.owl#Dataset
+###  http://kero.hgc.jp/ontology/kero.owl#Dataset
 
 :Dataset rdf:type owl:Class .
 
 
 
-###  http://http://kero.hgc.jp/ontology/kero.owl#GeneBody
+###  http://kero.hgc.jp/ontology/kero.owl#MethylSeqDataset
 
-:GeneBody rdf:type owl:Class ;
-          
-          rdfs:label "Gene Body"@en ;
-          
-          rdfs:subClassOf :Region ;
-          
-          owl:deprecated "Mature mRNA region of gene."@en .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#MethylSeqFile
-
-:MethylSeqFile rdf:type owl:Class ;
-               
-               rdfs:comment "File of Methyl Sequence (Bisulfite Sequence) data"@en ,
-                            "Methyl Seq File"@en .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#Region
-
-:Region rdf:type owl:Class .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#TSSseqDataset
-
-:TSSseqDataset rdf:type owl:Class ;
-               
-               rdfs:label "TSS-seq Dataset"@en ;
-               
-               rdfs:subClassOf :Dataset ;
-               
-               rdfs:comment "Dataset obtained by TSS-seq"@en .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#UpstreamRegion
-
-:UpstreamRegion rdf:type owl:Class ;
-                
-                rdfs:label "Upstream Region"@en ;
-                
-                rdfs:subClassOf :Region ;
-                
-                rdfs:comment "Upstream region of gene from Transcription Start Site."@en .
-
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#UpstreamRegion1000
-
-:UpstreamRegion1000 rdf:type owl:Class ;
-                    
-                    rdfs:label "Upstream Region 1000"@en ;
-                    
-                    rdfs:subClassOf :UpstreamRegion ;
-                    
-                    rdfs:comment "1000-base upstream region of gene from Transcription Start Site."@en .
-
-
-
-
-
-#################################################################
-#
-#    Individuals
-#
-#################################################################
-
-
-###  http://http://kero.hgc.jp/ontology/kero.owl#Region
-
-:Region rdf:type owl:NamedIndividual ;
-        
-        owl:sameAs <http://purl.obolibrary.org/obo/SO_0000001> .
-
-
-
-###  http://purl.obolibrary.org/obo/SO_0000001
-
-<http://purl.obolibrary.org/obo/SO_0000001> rdf:type owl:NamedIndividual .
-
-
-
-
-
-#################################################################
-#
-#    Annotations
-#
-#################################################################
-
-
-:Region rdfs:label "Region"@en ;
-        
-        rdfs:comment "A sequence feature with an extent greater than zero."@en .
+:MethylSeqDataset rdf:type owl:Class ;
+                  
+                  rdfs:label "Methyl-seq dataset"@en ;
+                  
+                  rdfs:subClassOf :Dataset ;
+                  
+                  rdfs:comment "Dataset obtained by Bisulfite-seq"@en .
 
 
 
